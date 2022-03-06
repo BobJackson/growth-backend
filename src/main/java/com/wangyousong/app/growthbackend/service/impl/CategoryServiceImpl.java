@@ -13,7 +13,6 @@ import org.springframework.stereotype.Service;
 import javax.annotation.Resource;
 import java.util.List;
 import java.util.Optional;
-import java.util.stream.Collectors;
 
 @Service
 public class CategoryServiceImpl implements CategoryService {
@@ -34,7 +33,7 @@ public class CategoryServiceImpl implements CategoryService {
     @Override
     public List<CategoryResponse> findByName(String name) {
         List<Category> categories = repository.findByName(name);
-        return categories.stream().map(CategoryResponse::new).collect(Collectors.toList());
+        return categories.stream().map(CategoryResponse::new).toList();
     }
 
     @Override

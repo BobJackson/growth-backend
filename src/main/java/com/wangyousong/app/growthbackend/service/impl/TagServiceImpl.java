@@ -37,7 +37,7 @@ public class TagServiceImpl implements TagService {
     @Override
     public List<TagResponse> findByName(String name) {
         List<Tag> tags = repository.findByName(name);
-        return tags.stream().map(TagResponse::new).collect(Collectors.toList());
+        return tags.stream().map(TagResponse::new).toList();
     }
 
     @Override
@@ -66,6 +66,6 @@ public class TagServiceImpl implements TagService {
         return ImmutableList.copyOf(tags)
                 .stream()
                 .map(TagResponse::new)
-                .collect(Collectors.toList());
+                .toList();
     }
 }

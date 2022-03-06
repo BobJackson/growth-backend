@@ -6,11 +6,9 @@ import com.wangyousong.app.growthbackend.domain.Tag;
 import lombok.Data;
 import org.apache.commons.lang3.ObjectUtils;
 
-import java.time.LocalDate;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
-import java.util.stream.Collectors;
 
 @Data
 public class BookResponse {
@@ -33,8 +31,8 @@ public class BookResponse {
         this.cover = book.getCover();
         this.description = book.getDescription();
         this.category = book.getCategory().getName();
-        this.authors = book.getAuthors().stream().map(Author::getName).collect(Collectors.toList());
-        Collection<Tag> tags = ObjectUtils.defaultIfNull(book.getTags(), Collections.emptyList());
-        this.tags = tags.stream().map(Tag::getName).collect(Collectors.toList());
+        this.authors = book.getAuthors().stream().map(Author::getName).toList();
+        Collection<Tag> tagList = ObjectUtils.defaultIfNull(book.getTags(), Collections.emptyList());
+        this.tags = tagList.stream().map(Tag::getName).toList();
     }
 }
