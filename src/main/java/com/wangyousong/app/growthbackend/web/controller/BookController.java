@@ -19,14 +19,14 @@ public class BookController {
 
     @PostMapping
     public R<String> create(@RequestBody BookRequest dto) {
-        return R.succeed(bookService.create(dto));
+        return R.success(bookService.create(dto));
     }
 
     @GetMapping
     public R<Page<BookResponse>> list(@RequestParam int page, int size) {
         PageRequest pageRequest = PageRequest.of(page, size);
         Page<BookResponse> data = bookService.list(pageRequest);
-        return R.succeed(data);
+        return R.success(data);
     }
 
 }

@@ -17,7 +17,7 @@ public class R<T> {
         this.message = message;
     }
 
-    public static <T> R<T> succeed(T data) {
+    public static <T> R<T> success(T data) {
         return new R<>(data, true, "ok");
     }
 

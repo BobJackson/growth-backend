@@ -20,17 +20,17 @@ public class TagApi {
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
     public R<String> create(@RequestBody TagRequest request) {
-        return R.succeed(tagService.create(request));
+        return R.success(tagService.create(request));
     }
 
     @GetMapping("/{id}")
     public R<TagResponse> find(@PathVariable String id) {
-        return R.succeed(tagService.findById(id));
+        return R.success(tagService.findById(id));
     }
 
     @PostMapping("/actions/query-by-ids")
     public R<List<TagResponse>> list(@RequestBody IdsRequest request) {
-        return R.succeed(tagService.list(request.ids()));
+        return R.success(tagService.list(request.ids()));
     }
 
 }
