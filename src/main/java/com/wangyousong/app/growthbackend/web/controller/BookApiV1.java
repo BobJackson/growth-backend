@@ -3,6 +3,7 @@ package com.wangyousong.app.growthbackend.web.controller;
 import com.wangyousong.app.growthbackend.common.IdService;
 import com.wangyousong.app.growthbackend.common.R;
 import com.wangyousong.app.growthbackend.web.controller.dto.BookDtoV1;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -18,6 +19,7 @@ public class BookApiV1 {
     @Resource
     private IdService idService;
 
+    @Cacheable(cacheNames = {"bookList"})
     @CrossOrigin
     @GetMapping
     public R<List<BookDtoV1>> list() {

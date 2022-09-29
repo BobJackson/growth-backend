@@ -5,6 +5,8 @@ spring:
     redis:
       repositories:
         enabled: false
+  redis:
+    host: 172.20.0.1
 server:
   servlet:
     context-path: /api
