@@ -7,6 +7,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 import java.util.List;
 
+import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
@@ -19,5 +20,6 @@ class AliYunOssServiceImplTest {
     void listAllFiles() {
         List<String> keys = aliYunOssService.listAllFiles("books/it/");
         keys.forEach(System.out::println);
+        assertThat(keys).isNotEmpty();
     }
 }
