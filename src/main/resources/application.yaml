@@ -8,3 +8,11 @@ spring:
 server:
   servlet:
     context-path: /api
+
+aliyun:
+  oss:
+    endpoint: oss-cn-shanghai.aliyuncs.com
+    accessKeyId: your-key
+    accessKeySecret: your-secret
+    bucketName: growth-public
+
