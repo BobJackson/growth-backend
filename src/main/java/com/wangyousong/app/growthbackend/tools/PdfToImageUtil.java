@@ -11,7 +11,6 @@ import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
-import java.io.IOException;
 import java.util.Arrays;
 import java.util.concurrent.TimeUnit;
 
@@ -29,7 +28,7 @@ public class PdfToImageUtil {
     public static final String BOOKS_DIR = "/Users/bob/Desktop/books/it";
     public static final String COVERS_DIR = "/Users/bob/Desktop/covers/it/";
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
         File dir = new File(BOOKS_DIR);
         File[] pdfs = dir.listFiles();
         assert pdfs != null;
@@ -43,6 +42,8 @@ public class PdfToImageUtil {
     @SneakyThrows
     public static void pdfToImage(File pdf) {
         if(!pdf.getName().contains(".pdf")) return;
+        File dest = new File(COVERS_DIR + cutBookName(pdf.getName()) + "." + IMG_TYPE);
+        if(dest.exists()) return;
         try (PDDocument document = PDDocument.load(pdf)) {
             PDFRenderer renderer = new PDFRenderer(document);
             for (int i = 0; i < 1; ++i) {
@@ -50,9 +51,6 @@ public class PdfToImageUtil {
 
                 ByteArrayOutputStream out = new ByteArrayOutputStream();
                 ImageIO.write(bufferedImage, IMG_TYPE, out);
-
-                String bookName = cutBookName(pdf.getName());
-                File dest = new File(COVERS_DIR + bookName + "." + IMG_TYPE);
                 FileUtils.writeByteArrayToFile(dest, out.toByteArray());
             }
         }
