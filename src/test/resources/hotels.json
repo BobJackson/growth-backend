@@ -1,0 +1,2561 @@
+[{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c253"
+  },
+  "name": "青岛涵碧楼酒店",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/02054120009pbw1336DE5_R_480_480.jpg",
+  "cityName": "青岛",
+  "zone": "黄岛",
+  "price": "1760.0",
+  "lat": "35.971611",
+  "lng": "120.30054",
+  "originImage": "https://dimg04.c-ctrip.com/images/02054120009pbw1336DE5.jpg",
+  "favoriteCount": "45722",
+  "commentScore": 4.6,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068301"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c254"
+  },
+  "name": "青岛瑞吉酒店",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/0201y120008urclsk1369_R_480_480.jpg",
+  "cityName": "칭다오",
+  "zone": "五四广场",
+  "price": "1516.0",
+  "lat": "36.056439049277294",
+  "lng": "120.36995781156389",
+  "originImage": "https://dimg04.c-ctrip.com/images/0201y120008urclsk1369.jpg",
+  "favoriteCount": "7490",
+  "commentScore": 4.8,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068301"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c255"
+  },
+  "name": "天津丽思卡尔顿酒店",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/hotel/481000/480060/6909cf05e8d64ac28a35b0ea1fd9404b_R_480_480.jpg",
+  "cityName": "天津",
+  "zone": "滨江道商圈",
+  "price": "2080.0",
+  "lat": "39.121397",
+  "lng": "117.213983",
+  "originImage": "https://dimg04.c-ctrip.com/images/hotel/481000/480060/6909cf05e8d64ac28a35b0ea1fd9404b.jpg",
+  "favoriteCount": "21188",
+  "commentScore": 4.7,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068301"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c256"
+  },
+  "name": "珠海凤凰湾悦椿酒店",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/200o15000000x8khn86F4_R_480_480.jpg",
+  "cityName": "珠海",
+  "zone": "唐家湾/中山大学",
+  "price": "1500.0",
+  "lat": "22.312879",
+  "lng": "113.604055",
+  "originImage": "https://dimg04.c-ctrip.com/images/200o15000000x8khn86F4.jpg",
+  "favoriteCount": "43174",
+  "commentScore": 4.6,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068301"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c257"
+  },
+  "name": "昆明滇池宋品酒店",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/0206i120009ddot70EAE2_R_480_480.jpg",
+  "cityName": "昆明",
+  "zone": "滇池/融创滇池后海",
+  "price": "1471.0",
+  "lat": "25.016499",
+  "lng": "102.655912",
+  "originImage": "https://dimg04.c-ctrip.com/images/0206i120009ddot70EAE2.jpg",
+  "favoriteCount": "5594",
+  "commentScore": 4.8,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068301"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c258"
+  },
+  "name": "昆明柏联酒店",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/hotel/65000/64416/5cdaca6af4fc4b6d9ac510c8c07ee238_R_480_480.jpg",
+  "cityName": "宜良",
+  "zone": "阳宗海华侨城度假区",
+  "price": "4080.0",
+  "lat": "24.955888",
+  "lng": "103.005226",
+  "originImage": "https://dimg04.c-ctrip.com/images/hotel/65000/64416/5cdaca6af4fc4b6d9ac510c8c07ee238.jpg",
+  "favoriteCount": "9561",
+  "commentScore": 4.6,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068301"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c259"
+  },
+  "name": "武汉万达瑞华酒店",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/fd/hotel/g3/M09/A1/0B/CggYG1XrihCAcI-rABSBLAUFeIY069_R_480_480.jpg",
+  "cityName": "武汉",
+  "zone": "汉街",
+  "price": "1100.0",
+  "lat": "30.552805",
+  "lng": "114.347532",
+  "originImage": "https://dimg04.c-ctrip.com/images/fd/hotel/g3/M09/A1/0B/CggYG1XrihCAcI-rABSBLAUFeIY069.jpg",
+  "favoriteCount": "12938",
+  "commentScore": 4.8,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068301"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c25a"
+  },
+  "name": "武汉泛海费尔蒙酒店",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/0206e120008ilkmtg49CA_R_480_480.jpg",
+  "cityName": "武汉",
+  "zone": "汉口火车站商圈",
+  "price": "1179.0",
+  "lat": "30.5989543777958",
+  "lng": "114.250409454394",
+  "originImage": "https://dimg04.c-ctrip.com/images/0206e120008ilkmtg49CA.jpg",
+  "favoriteCount": "9022",
+  "commentScore": 4.8,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068301"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c25b"
+  },
+  "name": "厦门华尔道夫酒店",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/0202m120008ei1iso56FA_R_480_480.jpg",
+  "cityName": "厦门",
+  "zone": "厦门火车站地区",
+  "price": "1734.0",
+  "lat": "24.4846187623448",
+  "lng": "118.128117763155",
+  "originImage": "https://dimg04.c-ctrip.com/images/0202m120008ei1iso56FA.jpg",
+  "favoriteCount": "9517",
+  "commentScore": 4.7,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068301"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c25c"
+  },
+  "name": "厦门W酒店",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/02067120009cusiv3A67E_R_480_480.jpg",
+  "cityName": "厦门",
+  "zone": "五缘湾地区",
+  "price": "1458.0",
+  "lat": "24.485252585640794",
+  "lng": "118.17082283741797",
+  "originImage": "https://dimg04.c-ctrip.com/images/02067120009cusiv3A67E.jpg",
+  "favoriteCount": "2980",
+  "commentScore": 4.7,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068301"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c25d"
+  },
+  "name": "厦门七尚酒店",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/02006120008fno4xfE741_R_480_480.jpg",
+  "cityName": "厦门",
+  "zone": "五缘湾地区",
+  "price": "1761.0",
+  "lat": "24.527626",
+  "lng": "118.183292",
+  "originImage": "https://dimg04.c-ctrip.com/images/02006120008fno4xfE741.jpg",
+  "favoriteCount": "28372",
+  "commentScore": 4.9,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068301"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c25e"
+  },
+  "name": "厦门安达仕酒店",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/0203l1200083e95j1C985_R_480_480.jpg",
+  "cityName": "廈門",
+  "zone": "厦门火车站地区",
+  "price": "1574.0",
+  "lat": "24.4716570303932",
+  "lng": "118.109971428733",
+  "originImage": "https://dimg04.c-ctrip.com/images/0203l1200083e95j1C985.jpg",
+  "favoriteCount": "11295",
+  "commentScore": 4.7,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068301"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c25f"
+  },
+  "name": "厦门康莱德酒店",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/0203r1200093o5y67E64A_R_480_480.jpg",
+  "cityName": "厦门",
+  "zone": "厦门大学地区",
+  "price": "1794.0",
+  "lat": "24.435242857457737",
+  "lng": "118.08937902939172",
+  "originImage": "https://dimg04.c-ctrip.com/images/0203r1200093o5y67E64A.jpg",
+  "favoriteCount": "49652",
+  "commentScore": 4.7,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068301"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c260"
+  },
+  "name": "西安索菲特传奇酒店",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/20060k000000b971iEA9A_R_480_480.jpg",
+  "cityName": "西安",
+  "zone": "钟鼓楼商圈",
+  "price": "1275.0",
+  "lat": "34.26486",
+  "lng": "108.958877",
+  "originImage": "https://dimg04.c-ctrip.com/images/20060k000000b971iEA9A.jpg",
+  "favoriteCount": "16473",
+  "commentScore": 4.8,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068301"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c261"
+  },
+  "name": "西安W酒店",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/200m0v000000jw35iACC3_R_480_480.jpg",
+  "cityName": "西安",
+  "zone": "大雁塔度假区",
+  "price": "1299.0",
+  "lat": "34.19689",
+  "lng": "108.988226",
+  "originImage": "https://dimg04.c-ctrip.com/images/200m0v000000jw35iACC3.jpg",
+  "favoriteCount": "27291",
+  "commentScore": 4.8,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068301"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c262"
+  },
+  "name": "青城山六善酒店",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/fd/hotel/g3/M01/1B/35/CggYG1bLju6ATl0_AAqjjt7_qxo737_R_480_480.jpg",
+  "cityName": "都江堰",
+  "zone": "青城山前山景区",
+  "price": "2388.0",
+  "lat": "30.893873",
+  "lng": "103.59177",
+  "originImage": "https://dimg04.c-ctrip.com/images/fd/hotel/g3/M01/1B/35/CggYG1bLju6ATl0_AAqjjt7_qxo737.jpg",
+  "favoriteCount": "40441",
+  "commentScore": 4.7,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068301"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c263"
+  },
+  "name": "成都青城宋品酒店",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/020541200093cjhnu5E16_R_480_480.jpg",
+  "cityName": "都江堰",
+  "zone": "融创乐园/玉堂镇",
+  "price": "2294.0",
+  "lat": "30.9573619606042",
+  "lng": "103.621958608054",
+  "originImage": "https://dimg04.c-ctrip.com/images/020541200093cjhnu5E16.jpg",
+  "favoriteCount": "7798",
+  "commentScore": 4.8,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068301"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c264"
+  },
+  "name": "成都博舍",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/0223m12000849y1o8490A_R_480_480.jpg",
+  "cityName": "成都",
+  "zone": "春熙路/太古里",
+  "price": "1988.0",
+  "lat": "30.651512",
+  "lng": "104.084731",
+  "originImage": "https://dimg04.c-ctrip.com/images/0223m12000849y1o8490A.jpg",
+  "favoriteCount": "45835",
+  "commentScore": 4.7,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068301"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c265"
+  },
+  "name": "成都W酒店",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/0202r1200086mow8uE074_R_480_480.jpg",
+  "cityName": "Chengdu",
+  "zone": "金融城/双子塔",
+  "price": "1188.0",
+  "lat": "30.5829588890781",
+  "lng": "104.055016890403",
+  "originImage": "https://dimg04.c-ctrip.com/images/0202r1200086mow8uE074.jpg",
+  "favoriteCount": "8409",
+  "commentScore": 4.8,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068301"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c266"
+  },
+  "name": "成都华尔道夫酒店",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/02047120008sa538yCBD9_R_480_480.jpg",
+  "cityName": "成都",
+  "zone": "金融城/双子塔",
+  "price": "1189.0",
+  "lat": "30.584473",
+  "lng": "104.068911",
+  "originImage": "https://dimg04.c-ctrip.com/images/02047120008sa538yCBD9.jpg",
+  "favoriteCount": "19209",
+  "commentScore": 4.7,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068301"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c267"
+  },
+  "name": "成都官塘安麓酒店",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/0204y1200090an7e59850_R_480_480.jpg",
+  "cityName": "成都",
+  "zone": "天府新区/西博城地区",
+  "price": "1810.0",
+  "lat": "30.397635298737463",
+  "lng": "104.04120947484616",
+  "originImage": "https://dimg04.c-ctrip.com/images/0204y1200090an7e59850.jpg",
+  "favoriteCount": "5409",
+  "commentScore": 4.7,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068301"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c268"
+  },
+  "name": "成都钓鱼台精品酒店",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/fd/hotel/g1/M0A/6B/AA/CghzflViwNqAIHWzAAbl8S7rW_Q629_R_480_480.jpg",
+  "cityName": "成都",
+  "zone": "宽窄巷子商圈",
+  "price": "1188.0",
+  "lat": "30.664609",
+  "lng": "104.05153",
+  "originImage": "https://dimg04.c-ctrip.com/images/fd/hotel/g1/M0A/6B/AA/CghzflViwNqAIHWzAAbl8S7rW_Q629.jpg",
+  "favoriteCount": "16357",
+  "commentScore": 4.9,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068301"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c269"
+  },
+  "name": "成都富力丽思卡尔顿酒店",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/0204t120008suo8zvDB23_R_480_480.jpg",
+  "cityName": "成都",
+  "zone": "天府广场商圈",
+  "price": "799.0",
+  "lat": "30.664057",
+  "lng": "104.069962",
+  "originImage": "https://dimg04.c-ctrip.com/images/0204t120008suo8zvDB23.jpg",
+  "favoriteCount": "25972",
+  "commentScore": 4.7,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068301"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c26a"
+  },
+  "name": "成都尼依格罗酒店",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/220j180000014yc7p0D7F_R_480_480.jpg",
+  "cityName": "成都",
+  "zone": "春熙路/太古里",
+  "price": "1287.0",
+  "lat": "30.655014",
+  "lng": "104.082376",
+  "originImage": "https://dimg04.c-ctrip.com/images/220j180000014yc7p0D7F.jpg",
+  "favoriteCount": "50791",
+  "commentScore": 4.8,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068301"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c26b"
+  },
+  "name": "成都万达瑞华酒店",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/200c0j000000aweqfC96E_R_480_480.jpg",
+  "cityName": "成都",
+  "zone": "天府广场商圈",
+  "price": "799.0",
+  "lat": "30.646906",
+  "lng": "104.069687",
+  "originImage": "https://dimg04.c-ctrip.com/images/200c0j000000aweqfC96E.jpg",
+  "favoriteCount": "25223",
+  "commentScore": 4.8,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068301"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c26c"
+  },
+  "name": "成都瑯珀·凯悦臻选酒店",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/0205p120008pce6vuB2FC_R_480_480.jpg",
+  "cityName": "成都",
+  "zone": "春熙路/太古里",
+  "price": "1128.0",
+  "lat": "30.6485324374233",
+  "lng": "104.083181200726",
+  "originImage": "https://dimg04.c-ctrip.com/images/0205p120008pce6vuB2FC.jpg",
+  "favoriteCount": "13981",
+  "commentScore": 4.7,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068301"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c26d"
+  },
+  "name": "成都瑞吉酒店",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/02027120008fy9ok332A3_R_480_480.jpg",
+  "cityName": "成都",
+  "zone": "春熙路/太古里",
+  "price": "799.0",
+  "lat": "30.661017",
+  "lng": "104.074499",
+  "originImage": "https://dimg04.c-ctrip.com/images/02027120008fy9ok332A3.jpg",
+  "favoriteCount": "25734",
+  "commentScore": 4.8,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068301"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c26e"
+  },
+  "name": "长沙瑞吉酒店",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/200s0f0000007m1q9A842_R_480_480.jpg",
+  "cityName": "长沙",
+  "zone": "万家丽",
+  "price": "1574.0",
+  "lat": "28.169993",
+  "lng": "113.043926",
+  "originImage": "https://dimg04.c-ctrip.com/images/200s0f0000007m1q9A842.jpg",
+  "favoriteCount": "13823",
+  "commentScore": 4.9,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068301"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c26f"
+  },
+  "name": "长沙尼依格罗酒店",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/0222e120009kl0ks16E19_R_480_480.jpg",
+  "cityName": "長沙",
+  "zone": "五一／IFS／长沙站",
+  "price": "1283.0",
+  "lat": "28.192408",
+  "lng": "112.979712",
+  "originImage": "https://dimg04.c-ctrip.com/images/0222e120009kl0ks16E19.jpg",
+  "favoriteCount": "36160",
+  "commentScore": 4.7,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068301"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c270"
+  },
+  "name": "重庆山前宋品酒店",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/02018120009sx1i8598EC_R_480_480.jpg",
+  "cityName": "重庆",
+  "zone": "大学城",
+  "price": "1764.0",
+  "lat": "29.636111",
+  "lng": "106.359309",
+  "originImage": "https://dimg04.c-ctrip.com/images/02018120009sx1i8598EC.jpg",
+  "favoriteCount": "4995",
+  "commentScore": 4.8,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068301"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c271"
+  },
+  "name": "重庆北碚悦榕庄",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/hotel/436000/435508/cc9658a42dfa47dba597cc5456413c88_R_480_480.jpg",
+  "cityName": "重庆",
+  "zone": "西南大学缙云校区",
+  "price": "1973.0",
+  "lat": "29.85638",
+  "lng": "106.380304",
+  "originImage": "https://dimg04.c-ctrip.com/images/hotel/436000/435508/cc9658a42dfa47dba597cc5456413c88.jpg",
+  "favoriteCount": "29150",
+  "commentScore": 4.7,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068302"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c272"
+  },
+  "name": "重庆丽晶酒店",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/0203g120008p2c167D3CE_R_480_480.jpg",
+  "cityName": "重慶",
+  "zone": "观音桥",
+  "price": "1395.0",
+  "lat": "29.57116",
+  "lng": "106.570604",
+  "originImage": "https://dimg04.c-ctrip.com/images/0203g120008p2c167D3CE.jpg",
+  "favoriteCount": "32844",
+  "commentScore": 4.8,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068302"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c273"
+  },
+  "name": "重庆来福士洲际酒店",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/200b1g000001hjez07B36_R_480_480.jpg",
+  "cityName": "重庆",
+  "zone": "解放碑",
+  "price": "1395.0",
+  "lat": "29.565488",
+  "lng": "106.587955",
+  "originImage": "https://dimg04.c-ctrip.com/images/200b1g000001hjez07B36.jpg",
+  "favoriteCount": "19958",
+  "commentScore": 4.8,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068302"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c274"
+  },
+  "name": "重庆尼依格罗酒店",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/20090s000000i19m6E7FA_R_480_480.jpg",
+  "cityName": "重庆",
+  "zone": "观音桥",
+  "price": "1166.0",
+  "lat": "29.575836",
+  "lng": "106.573074",
+  "originImage": "https://dimg04.c-ctrip.com/images/20090s000000i19m6E7FA.jpg",
+  "favoriteCount": "36152",
+  "commentScore": 4.8,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068302"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c275"
+  },
+  "name": "重庆柏联酒店",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/fd/hotel/g3/M0B/73/BD/CggYGVXns5WABrwDAAOg-86ZHLI737_R_480_480.jpg",
+  "cityName": "重庆",
+  "zone": "西南大学缙云校区",
+  "price": "3650.0",
+  "lat": "29.856884",
+  "lng": "106.416472",
+  "originImage": "https://dimg04.c-ctrip.com/images/fd/hotel/g3/M0B/73/BD/CggYGVXns5WABrwDAAOg-86ZHLI737.jpg",
+  "favoriteCount": "19426",
+  "commentScore": 4.8,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068302"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c276"
+  },
+  "name": "深圳鹏瑞莱佛士酒店",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/200v1c000001cu3p47861_R_480_480.jpg",
+  "cityName": "深圳",
+  "zone": "海岸城/后海",
+  "price": "2626.0",
+  "lat": "22.505956",
+  "lng": "113.942411",
+  "originImage": "https://dimg04.c-ctrip.com/images/200v1c000001cu3p47861.jpg",
+  "favoriteCount": "15995",
+  "commentScore": 4.7,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068302"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c277"
+  },
+  "name": "深圳柏悦酒店",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/200115000000xmbeh722F_R_480_480.jpg",
+  "cityName": "深圳",
+  "zone": "会展中心",
+  "price": "2199.0",
+  "lat": "22.5320262393386",
+  "lng": "114.05561568474",
+  "originImage": "https://dimg04.c-ctrip.com/images/200115000000xmbeh722F.jpg",
+  "favoriteCount": "10683",
+  "commentScore": 4.9,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068302"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c278"
+  },
+  "name": "深圳湾安达仕酒店",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/0203h120008cdseifC488_R_480_480.jpg",
+  "cityName": "선전",
+  "zone": "海岸城/后海",
+  "price": "2254.0",
+  "lat": "22.5148665182182",
+  "lng": "113.947149737969",
+  "originImage": "https://dimg04.c-ctrip.com/images/0203h120008cdseifC488.jpg",
+  "favoriteCount": "9074",
+  "commentScore": 4.8,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068302"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c279"
+  },
+  "name": "深圳桔钓沙莱华度假酒店",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/0201t1200073jwnggF019_R_480_480.jpg",
+  "cityName": "深圳",
+  "zone": "杨梅坑商圈",
+  "price": "1349.0",
+  "lat": "22.555919",
+  "lng": "114.552652",
+  "originImage": "https://dimg04.c-ctrip.com/images/0201t1200073jwnggF019.jpg",
+  "favoriteCount": "42211",
+  "commentScore": 4.8,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068302"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c27a"
+  },
+  "name": "深圳大梅沙京基洲际度假酒店",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/200c0s000000i8bsnB2C8_R_480_480.jpg",
+  "cityName": "深圳",
+  "zone": "大小梅沙/东部华侨城",
+  "price": "1180.0",
+  "lat": "22.597505",
+  "lng": "114.314252",
+  "originImage": "https://dimg04.c-ctrip.com/images/200c0s000000i8bsnB2C8.jpg",
+  "favoriteCount": "45924",
+  "commentScore": 4.7,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068302"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c27b"
+  },
+  "name": "深圳文华东方酒店",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/0203v1200098ct560A0A9_R_480_480.jpg",
+  "cityName": "深圳",
+  "zone": "莲花山商圈",
+  "price": "2556.0",
+  "lat": "22.555979",
+  "lng": "114.071623",
+  "originImage": "https://dimg04.c-ctrip.com/images/0203v1200098ct560A0A9.jpg",
+  "favoriteCount": "3763",
+  "commentScore": 4.8,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068302"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c27c"
+  },
+  "name": "深圳佳兆业万豪酒店",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/200b12000000szth18F27_R_480_480.jpg",
+  "cityName": "深圳",
+  "zone": "较场尾/大鹏所城",
+  "price": "958.0",
+  "lat": "22.569193",
+  "lng": "114.459325",
+  "originImage": "https://dimg04.c-ctrip.com/images/200b12000000szth18F27.jpg",
+  "favoriteCount": "39854",
+  "commentScore": 4.6,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068302"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c27d"
+  },
+  "name": "千岛湖安麓酒店",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/200q0k000000be63zB0D9_R_480_480.jpg",
+  "cityName": "淳安",
+  "zone": "文渊狮城/龙川湾景区",
+  "price": "2610.0",
+  "lat": "29.477251",
+  "lng": "118.689684",
+  "originImage": "https://dimg04.c-ctrip.com/images/200q0k000000be63zB0D9.jpg",
+  "favoriteCount": "35190",
+  "commentScore": 4.7,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068302"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c27e"
+  },
+  "name": "杭州桐庐康莱德酒店",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/20051800000152y6kD757_R_480_480.jpg",
+  "cityName": "桐庐",
+  "zone": "",
+  "price": "2099.0",
+  "lat": "29.9839590933796",
+  "lng": "119.4201588923",
+  "originImage": "https://dimg04.c-ctrip.com/images/20051800000152y6kD757.jpg",
+  "favoriteCount": "33339",
+  "commentScore": 4.6,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068302"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c27f"
+  },
+  "name": "杭州富春方外酒店",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/020711200091qzibtCF8B_R_480_480.jpg",
+  "cityName": "建德",
+  "zone": "乾潭商圈",
+  "price": "1818.0",
+  "lat": "29.614847441601597",
+  "lng": "119.55609988475675",
+  "originImage": "https://dimg04.c-ctrip.com/images/020711200091qzibtCF8B.jpg",
+  "favoriteCount": "26218",
+  "commentScore": 4.8,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068302"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c280"
+  },
+  "name": "杭州法云安缦",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/200l12000000rtgoa9AE7_R_480_480.jpg",
+  "cityName": "杭州",
+  "zone": "西湖风景区/灵隐度假区",
+  "price": "5750.0",
+  "lat": "30.235327",
+  "lng": "120.097504",
+  "originImage": "https://dimg04.c-ctrip.com/images/200l12000000rtgoa9AE7.jpg",
+  "favoriteCount": "43074",
+  "commentScore": 4.6,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068302"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c281"
+  },
+  "name": "杭州西子湖四季酒店",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/hotel/81000/80764/65a3dc8459da4a898a0f9a6a385928c1_R_480_480.jpg",
+  "cityName": "杭州",
+  "zone": "西湖风景区/灵隐度假区",
+  "price": "4722.0",
+  "lat": "30.251227",
+  "lng": "120.127725",
+  "originImage": "https://dimg04.c-ctrip.com/images/hotel/81000/80764/65a3dc8459da4a898a0f9a6a385928c1.jpg",
+  "favoriteCount": "35190",
+  "commentScore": 4.8,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068302"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c282"
+  },
+  "name": "杭州西溪悦榕庄",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/hotel/73000/72922/c94c4ecf955b4f0c9eff07d61217aea6_R_480_480.jpg",
+  "cityName": "杭州",
+  "zone": "西溪湿地商圈",
+  "price": "3200.0",
+  "lat": "30.267339",
+  "lng": "120.087028",
+  "originImage": "https://dimg04.c-ctrip.com/images/hotel/73000/72922/c94c4ecf955b4f0c9eff07d61217aea6.jpg",
+  "favoriteCount": "35355",
+  "commentScore": 4.8,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068302"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c283"
+  },
+  "name": "杭州富春山居高尔夫度假村",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/0201u120009cena2j29EC_R_480_480.jpg",
+  "cityName": "杭州",
+  "zone": "富阳城区",
+  "price": "4700.0",
+  "lat": "30.07681",
+  "lng": "119.993124",
+  "originImage": "https://dimg04.c-ctrip.com/images/0201u120009cena2j29EC.jpg",
+  "favoriteCount": "29039",
+  "commentScore": 4.8,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068302"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c284"
+  },
+  "name": "杭州柏悦酒店",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/200i0c000000611ek314C_R_480_480.jpg",
+  "cityName": "杭州",
+  "zone": "钱江新城",
+  "price": "1968.0",
+  "lat": "30.25379",
+  "lng": "120.214926",
+  "originImage": "https://dimg04.c-ctrip.com/images/200i0c000000611ek314C.jpg",
+  "favoriteCount": "30190",
+  "commentScore": 4.7,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068302"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c285"
+  },
+  "name": "杭州西湖国宾馆·西湖第一名园",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/0201v120009oc4pn5FD89_R_480_480.jpg",
+  "cityName": "杭州",
+  "zone": "西湖风景区/灵隐度假区",
+  "price": "1480.0",
+  "lat": "30.236197",
+  "lng": "120.13474",
+  "originImage": "https://dimg04.c-ctrip.com/images/0201v120009oc4pn5FD89.jpg",
+  "favoriteCount": "61287",
+  "commentScore": 4.8,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068302"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c286"
+  },
+  "name": "罗莱夏朵·杭州紫萱度假村",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/20060c00000062pv4F306_R_480_480.jpg",
+  "cityName": "杭州",
+  "zone": "西湖风景区/灵隐度假区",
+  "price": "3878.0",
+  "lat": "30.229191415952",
+  "lng": "120.13373364724",
+  "originImage": "https://dimg04.c-ctrip.com/images/20060c00000062pv4F306.jpg",
+  "favoriteCount": "16095",
+  "commentScore": 4.8,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068302"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c287"
+  },
+  "name": "杭州木守西溪酒店",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/200o0z000000n4skg0094_R_480_480.jpg",
+  "cityName": "杭州",
+  "zone": "西溪湿地商圈",
+  "price": "2379.0",
+  "lat": "30.255041",
+  "lng": "120.053005",
+  "originImage": "https://dimg04.c-ctrip.com/images/200o0z000000n4skg0094.jpg",
+  "favoriteCount": "41684",
+  "commentScore": 4.7,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068302"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c288"
+  },
+  "name": "杭州所见·西溪度假酒店",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/0206x120009dsn9qsCB42_R_480_480.jpg",
+  "cityName": "杭州",
+  "zone": "西溪湿地商圈",
+  "price": "2618.0",
+  "lat": "30.275333985804462",
+  "lng": "120.0686919015984",
+  "originImage": "https://dimg04.c-ctrip.com/images/0206x120009dsn9qsCB42.jpg",
+  "favoriteCount": "22047",
+  "commentScore": 4.6,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068302"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c289"
+  },
+  "name": "杭州泛海钓鱼台酒店",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/200t0d0000006skx778EA_R_480_480.jpg",
+  "cityName": "杭州",
+  "zone": "钱江新城",
+  "price": "1288.0",
+  "lat": "30.239444",
+  "lng": "120.212606",
+  "originImage": "https://dimg04.c-ctrip.com/images/200t0d0000006skx778EA.jpg",
+  "favoriteCount": "20770",
+  "commentScore": 4.8,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068302"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c28a"
+  },
+  "name": "广州从都国际庄园",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/200812000000s3cvc9D00_R_480_480.jpg",
+  "cityName": "광저우",
+  "zone": "从化温泉／白水寨",
+  "price": "2400.0",
+  "lat": "23.685365",
+  "lng": "113.678122",
+  "originImage": "https://dimg04.c-ctrip.com/images/200812000000s3cvc9D00.jpg",
+  "favoriteCount": "31084",
+  "commentScore": 4.8,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068302"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c28b"
+  },
+  "name": "广州柏悦酒店",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/200l0n000000e7iytBF33_R_480_480.jpg",
+  "cityName": "广州",
+  "zone": "珠江新城",
+  "price": "1288.0",
+  "lat": "23.11858",
+  "lng": "113.321801",
+  "originImage": "https://dimg04.c-ctrip.com/images/200l0n000000e7iytBF33.jpg",
+  "favoriteCount": "27291",
+  "commentScore": 4.7,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068302"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c28c"
+  },
+  "name": "广州卓美亚酒店",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/200a1d000001eo61s88CF_R_480_480.jpg",
+  "cityName": "Guangzhou",
+  "zone": "珠江新城",
+  "price": "1311.0",
+  "lat": "23.11946",
+  "lng": "113.326903",
+  "originImage": "https://dimg04.c-ctrip.com/images/200a1d000001eo61s88CF.jpg",
+  "favoriteCount": "18014",
+  "commentScore": 4.8,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068302"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c28d"
+  },
+  "name": "广州文华东方酒店",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/hotel/427000/426277/bf2229fb79494258852488b0418c0575_R_480_480.jpg",
+  "cityName": "广州",
+  "zone": "天体中心",
+  "price": "1367.0",
+  "lat": "23.134616",
+  "lng": "113.333365",
+  "originImage": "https://dimg04.c-ctrip.com/images/hotel/427000/426277/bf2229fb79494258852488b0418c0575.jpg",
+  "favoriteCount": "22886",
+  "commentScore": 4.7,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068302"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c28e"
+  },
+  "name": "广州瑰丽酒店",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/20031800000158ab857D1_R_480_480.jpg",
+  "cityName": "广州",
+  "zone": "珠江新城",
+  "price": "1488.0",
+  "lat": "23.1181531872665",
+  "lng": "113.326415164573",
+  "originImage": "https://dimg04.c-ctrip.com/images/20031800000158ab857D1.jpg",
+  "favoriteCount": "27239",
+  "commentScore": 4.7,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068302"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c28f"
+  },
+  "name": "广州四季酒店",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/200v0b0000005pky2C4CB_R_480_480.jpg",
+  "cityName": "广州",
+  "zone": "珠江新城",
+  "price": "1388.0",
+  "lat": "23.117429",
+  "lng": "113.323196",
+  "originImage": "https://dimg04.c-ctrip.com/images/200v0b0000005pky2C4CB.jpg",
+  "favoriteCount": "47140",
+  "commentScore": 4.7,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068302"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c290"
+  },
+  "name": "广州富力丽思卡尔顿酒店",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/0204x120008xmyop55A82_R_480_480.jpg",
+  "cityName": "广州",
+  "zone": "珠江新城",
+  "price": "1234.0",
+  "lat": "23.116168",
+  "lng": "113.327228",
+  "originImage": "https://dimg04.c-ctrip.com/images/0204x120008xmyop55A82.jpg",
+  "favoriteCount": "29035",
+  "commentScore": 4.7,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068302"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c291"
+  },
+  "name": "北京国贸大酒店",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/0202l120009umy1scA0E0_R_480_480.jpg",
+  "cityName": "北京",
+  "zone": "国贸CBD",
+  "price": "1724.0",
+  "lat": "39.9130850934879",
+  "lng": "116.458709836006",
+  "originImage": "https://dimg04.c-ctrip.com/images/0202l120009umy1scA0E0.jpg",
+  "favoriteCount": "21035",
+  "commentScore": 4.6,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068302"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c292"
+  },
+  "name": "北京颐和安缦酒店",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/02051120009a8ftkd672A_R_480_480.jpg",
+  "cityName": "北京",
+  "zone": "中关村/五道口",
+  "price": "4370.0",
+  "lat": "39.999246",
+  "lng": "116.282762",
+  "originImage": "https://dimg04.c-ctrip.com/images/02051120009a8ftkd672A.jpg",
+  "favoriteCount": "23794",
+  "commentScore": 4.6,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068302"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c293"
+  },
+  "name": "北京华尔道夫胡同四合院",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/0200r1200098ufahp3F6F_R_480_480.jpg",
+  "cityName": "北京",
+  "zone": "天安门/王府井",
+  "price": "5031.0",
+  "lat": "39.916370679693",
+  "lng": "116.41412436912",
+  "originImage": "https://dimg04.c-ctrip.com/images/0200r1200098ufahp3F6F.jpg",
+  "favoriteCount": "7473",
+  "commentScore": 4.8,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068302"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c294"
+  },
+  "name": "北京瑜舍",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/0203w120009ebhcdr691B_R_480_480.jpg",
+  "cityName": "Beijing",
+  "zone": "三里屯/工体/东直门",
+  "price": "2487.0",
+  "lat": "39.937502",
+  "lng": "116.454689",
+  "originImage": "https://dimg04.c-ctrip.com/images/0203w120009ebhcdr691B.jpg",
+  "favoriteCount": "19782",
+  "commentScore": 4.8,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068302"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c295"
+  },
+  "name": "古北水镇御舍精品酒店",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/200b17000001248yx826F_R_480_480.jpg",
+  "cityName": "北京",
+  "zone": "古北水镇",
+  "price": "3590.0",
+  "lat": "40.655197",
+  "lng": "117.278513",
+  "originImage": "https://dimg04.c-ctrip.com/images/200b17000001248yx826F.jpg",
+  "favoriteCount": "20539",
+  "commentScore": 4.7,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068302"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c296"
+  },
+  "name": "古北水镇函谷山庄酒店",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/200r1e000001ffb6x3EFF_R_480_480.jpg",
+  "cityName": "北京",
+  "zone": "古北水镇",
+  "price": "1990.0",
+  "lat": "40.650173",
+  "lng": "117.277039",
+  "originImage": "https://dimg04.c-ctrip.com/images/200r1e000001ffb6x3EFF.jpg",
+  "favoriteCount": "24378",
+  "commentScore": 4.7,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068302"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c297"
+  },
+  "name": "北京王府井文华东方酒店",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/200a13000000tu9uk8195_R_480_480.jpg",
+  "cityName": "北京",
+  "zone": "天安门/王府井",
+  "price": "4067.0",
+  "lat": "39.912827",
+  "lng": "116.410183",
+  "originImage": "https://dimg04.c-ctrip.com/images/200a13000000tu9uk8195.jpg",
+  "favoriteCount": "14359",
+  "commentScore": 4.8,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068302"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c298"
+  },
+  "name": "北京雁栖酒店",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/fd/hotel/g5/M0A/C9/D9/CggYsVc61jSAOfxoAAWSALn_6O4966_R_480_480.jpg",
+  "cityName": "北京",
+  "zone": "怀柔景区",
+  "price": "2539.0",
+  "lat": "40.3972956267593",
+  "lng": "116.669932394216",
+  "originImage": "https://dimg04.c-ctrip.com/images/fd/hotel/g5/M0A/C9/D9/CggYsVc61jSAOfxoAAWSALn_6O4966.jpg",
+  "favoriteCount": "25107",
+  "commentScore": 4.7,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068302"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c299"
+  },
+  "name": "北京怡亨酒店",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/fd/hotel/g4/M06/DD/8A/CggYHVZfxiKAIn_nAAW2JUFlPj0086_R_480_480.jpg",
+  "cityName": "北京",
+  "zone": "三里屯/工体/东直门",
+  "price": "1499.0",
+  "lat": "39.9203783632377",
+  "lng": "116.450156271458",
+  "originImage": "https://dimg04.c-ctrip.com/images/fd/hotel/g4/M06/DD/8A/CggYHVZfxiKAIn_nAAW2JUFlPj0086.jpg",
+  "favoriteCount": "24471",
+  "commentScore": 4.6,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068302"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c29a"
+  },
+  "name": "古北水镇乌镇会精品酒店",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/20080u000000j2j4074D6_R_480_480.jpg",
+  "cityName": "北京",
+  "zone": "古北水镇",
+  "price": "1266.0",
+  "lat": "40.651964",
+  "lng": "117.27643",
+  "originImage": "https://dimg04.c-ctrip.com/images/20080u000000j2j4074D6.jpg",
+  "favoriteCount": "12676",
+  "commentScore": 4.7,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068302"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c29b"
+  },
+  "name": "北京璞瑄酒店",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/02065120008kdapq98C21_R_480_480.jpg",
+  "cityName": "北京",
+  "zone": "天安门/王府井",
+  "price": "2288.0",
+  "lat": "39.923984",
+  "lng": "116.410292",
+  "originImage": "https://dimg04.c-ctrip.com/images/02065120008kdapq98C21.jpg",
+  "favoriteCount": "22621",
+  "commentScore": 4.7,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068302"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c29c"
+  },
+  "name": "北京海湾半山温泉酒店",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/02073120009e304v387BD_R_480_480.jpg",
+  "cityName": "北京",
+  "zone": "密云水库",
+  "price": "2198.0",
+  "lat": "40.4457376889244",
+  "lng": "116.836565539133",
+  "originImage": "https://dimg04.c-ctrip.com/images/02073120009e304v387BD.jpg",
+  "favoriteCount": "75486",
+  "commentScore": 4.8,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068302"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c29d"
+  },
+  "name": "北京日出东方凯宾斯基酒店",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/0205g1200090blb5k76D8_R_480_480.jpg",
+  "cityName": "北京",
+  "zone": "怀柔景区",
+  "price": "2329.0",
+  "lat": "40.38681",
+  "lng": "116.677196",
+  "originImage": "https://dimg04.c-ctrip.com/images/0205g1200090blb5k76D8.jpg",
+  "favoriteCount": "24299",
+  "commentScore": 4.6,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068302"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c29e"
+  },
+  "name": "北京三里屯通盈中心洲际酒店",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/20070j000000aiy1lE2B2_R_480_480.jpg",
+  "cityName": "北京",
+  "zone": "三里屯/工体/东直门",
+  "price": "1716.0",
+  "lat": "39.932918",
+  "lng": "116.45525",
+  "originImage": "https://dimg04.c-ctrip.com/images/20070j000000aiy1lE2B2.jpg",
+  "favoriteCount": "23725",
+  "commentScore": 4.7,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068302"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c29f"
+  },
+  "name": "诺金度假酒店–北京环球度假区",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/02010120008xsrz9345F9_R_480_480.jpg",
+  "cityName": "베이징",
+  "zone": "果园环岛/通州",
+  "price": "1550.0",
+  "lat": "39.85100419887713",
+  "lng": "116.68211559426292",
+  "originImage": "https://dimg04.c-ctrip.com/images/02010120008xsrz9345F9.jpg",
+  "favoriteCount": "7741",
+  "commentScore": 4.7,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068302"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c2a0"
+  },
+  "name": "北京华尔道夫酒店",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/200h1900000169lrb0A47_R_480_480.jpg",
+  "cityName": "北京",
+  "zone": "天安门/王府井",
+  "price": "1665.0",
+  "lat": "39.916027",
+  "lng": "116.414068",
+  "originImage": "https://dimg04.c-ctrip.com/images/200h1900000169lrb0A47.jpg",
+  "favoriteCount": "30966",
+  "commentScore": 4.7,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068302"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c2a1"
+  },
+  "name": "北京宝格丽酒店",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/200w0k000000ccmpp55A1_R_480_480.jpg",
+  "cityName": "北京",
+  "zone": "燕莎/朝阳公园",
+  "price": "3847.0",
+  "lat": "39.948000893465",
+  "lng": "116.45765737449",
+  "originImage": "https://dimg04.c-ctrip.com/images/200w0k000000ccmpp55A1.jpg",
+  "favoriteCount": "21973",
+  "commentScore": 4.7,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068302"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c2a2"
+  },
+  "name": "北京世园璞燊酒店",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/2004180000014l38lF2B3_R_480_480.jpg",
+  "cityName": "北京",
+  "zone": "延庆度假区",
+  "price": "1988.0",
+  "lat": "40.4429233688108",
+  "lng": "115.943219411926",
+  "originImage": "https://dimg04.c-ctrip.com/images/2004180000014l38lF2B3.jpg",
+  "favoriteCount": "14032",
+  "commentScore": 4.7,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068302"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c2a3"
+  },
+  "name": "北京王府半岛酒店",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/20050i0000009lknb0EFC_R_480_480.jpg",
+  "cityName": "北京",
+  "zone": "天安门/王府井",
+  "price": "2279.0",
+  "lat": "39.9153498",
+  "lng": "116.4164271",
+  "originImage": "https://dimg04.c-ctrip.com/images/20050i0000009lknb0EFC.jpg",
+  "favoriteCount": "27944",
+  "commentScore": 4.7,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068302"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c2a4"
+  },
+  "name": "北京瑰丽酒店",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/t1/hotel/1199000/1198300/db2629b825574329842aaaa89f28e146_R_480_480.jpg",
+  "cityName": "北京",
+  "zone": "国贸CBD",
+  "price": "2279.0",
+  "lat": "39.920376",
+  "lng": "116.460582",
+  "originImage": "https://dimg04.c-ctrip.com/images/t1/hotel/1199000/1198300/db2629b825574329842aaaa89f28e146.jpg",
+  "favoriteCount": "39021",
+  "commentScore": 4.7,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068302"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c2a5"
+  },
+  "name": "北京柏悦酒店",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/200h16000000z93j8F092_R_480_480.jpg",
+  "cityName": "北京",
+  "zone": "国贸CBD",
+  "price": "1684.0",
+  "lat": "39.907477",
+  "lng": "116.459188",
+  "originImage": "https://dimg04.c-ctrip.com/images/200h16000000z93j8F092.jpg",
+  "favoriteCount": "24412",
+  "commentScore": 4.8,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068302"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c2a6"
+  },
+  "name": "北京丽思卡尔顿酒店(华贸中心)",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/02061120008ha36jg518F_R_480_480.jpg",
+  "cityName": "北京",
+  "zone": "国贸CBD",
+  "price": "1469.0",
+  "lat": "39.910551",
+  "lng": "116.480763",
+  "originImage": "https://dimg04.c-ctrip.com/images/02061120008ha36jg518F.jpg",
+  "favoriteCount": "14412",
+  "commentScore": 4.7,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068302"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c2a7"
+  },
+  "name": "南京香樟华苹酒店",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/200a0u000000je1g6030A_R_480_480.jpg",
+  "cityName": "南京",
+  "zone": "汤山温泉/园博园度假区",
+  "price": "3286.0",
+  "lat": "32.044466",
+  "lng": "119.04849",
+  "originImage": "https://dimg04.c-ctrip.com/images/200a0u000000je1g6030A.jpg",
+  "favoriteCount": "36339",
+  "commentScore": 4.7,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068302"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c2a8"
+  },
+  "name": "南京园博园悦榕庄",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/0203g1200090p4of48E8C_R_480_480.jpg",
+  "cityName": "南京",
+  "zone": "汤山温泉/园博园度假区",
+  "price": "3086.0",
+  "lat": "32.07697477936602",
+  "lng": "119.0216761208615",
+  "originImage": "https://dimg04.c-ctrip.com/images/0203g1200090p4of48E8C.jpg",
+  "favoriteCount": "12266",
+  "commentScore": 4.8,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068302"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c2a9"
+  },
+  "name": "南京涵碧楼酒店",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/022521200084am1w1B1EB_R_480_480.jpg",
+  "cityName": "南京",
+  "zone": "河西万达/龙江",
+  "price": "1456.0",
+  "lat": "32.039429",
+  "lng": "118.72228",
+  "originImage": "https://dimg04.c-ctrip.com/images/022521200084am1w1B1EB.jpg",
+  "favoriteCount": "21139",
+  "commentScore": 4.7,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068302"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c2aa"
+  },
+  "name": "上海朱家角安麓酒店",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/fd/hotel/g4/M0A/EB/37/CggYHFbRwduAaGO8AAXMYL0Evxc532_R_480_480.jpg",
+  "cityName": "Shanghai",
+  "zone": "青浦朱家角/东方绿舟",
+  "price": "4000.0",
+  "lat": "31.114618",
+  "lng": "121.048805",
+  "originImage": "https://dimg04.c-ctrip.com/images/fd/hotel/g4/M0A/EB/37/CggYHFbRwduAaGO8AAXMYL0Evxc532.jpg",
+  "favoriteCount": "25072",
+  "commentScore": 4.8,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068302"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c2ab"
+  },
+  "name": "上海养云安缦酒店",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/200o0q000000gdesw1F9E_R_480_480.jpg",
+  "cityName": "上海",
+  "zone": "交大/闵行开发区",
+  "price": "5750.0",
+  "lat": "31.033834",
+  "lng": "121.347006",
+  "originImage": "https://dimg04.c-ctrip.com/images/200o0q000000gdesw1F9E.jpg",
+  "favoriteCount": "26316",
+  "commentScore": 4.8,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068302"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c2ac"
+  },
+  "name": "上海迪士尼乐园酒店",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/200p17000001391rkF710_R_480_480.jpg",
+  "cityName": "上海",
+  "zone": "迪士尼",
+  "price": "3411.0",
+  "lat": "31.135291",
+  "lng": "121.666334",
+  "originImage": "https://dimg04.c-ctrip.com/images/200p17000001391rkF710.jpg",
+  "favoriteCount": "53607",
+  "commentScore": 4.6,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068302"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c2ad"
+  },
+  "name": "上海建业里嘉佩乐酒店",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/20080y000000m77b9780F_R_480_480.jpg",
+  "cityName": "上海",
+  "zone": "衡山路",
+  "price": "3877.0",
+  "lat": "31.203762863272",
+  "lng": "121.45177349669",
+  "originImage": "https://dimg04.c-ctrip.com/images/20080y000000m77b9780F.jpg",
+  "favoriteCount": "35820",
+  "commentScore": 4.9,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068302"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c2ae"
+  },
+  "name": "上海阿纳迪酒店",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/200a1e000001ex0xa3C3A_R_480_480.jpg",
+  "cityName": "上海",
+  "zone": "虹桥",
+  "price": "2090.0",
+  "lat": "31.229737241753",
+  "lng": "121.35766577841",
+  "originImage": "https://dimg04.c-ctrip.com/images/200a1e000001ex0xa3C3A.jpg",
+  "favoriteCount": "35914",
+  "commentScore": 4.7,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068302"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c2af"
+  },
+  "name": "上海苏宁宝丽嘉酒店",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/200j0s000000hmujaF537_R_480_480.jpg",
+  "cityName": "上海",
+  "zone": "外滩核心区",
+  "price": "2391.0",
+  "lat": "31.2450181292443",
+  "lng": "121.487288121537",
+  "originImage": "https://dimg04.c-ctrip.com/images/200j0s000000hmujaF537.jpg",
+  "favoriteCount": "32946",
+  "commentScore": 4.7,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068302"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c2b0"
+  },
+  "name": "上海镛舍酒店",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/200t0u000000j46rpEA5C_R_480_480.jpg",
+  "cityName": "上海",
+  "zone": "静安寺/南京西路",
+  "price": "2016.0",
+  "lat": "31.229869",
+  "lng": "121.462772",
+  "originImage": "https://dimg04.c-ctrip.com/images/200t0u000000j46rpEA5C.jpg",
+  "favoriteCount": "22928",
+  "commentScore": 4.6,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068302"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c2b1"
+  },
+  "name": "上海鲁能JW万豪侯爵酒店",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/0202j120008xtofazDCCC_R_480_480.jpg",
+  "cityName": "上海",
+  "zone": "陆家嘴",
+  "price": "1399.0",
+  "lat": "31.2164784025022",
+  "lng": "121.513897808376",
+  "originImage": "https://dimg04.c-ctrip.com/images/0202j120008xtofazDCCC.jpg",
+  "favoriteCount": "26981",
+  "commentScore": 4.7,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068302"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c2b2"
+  },
+  "name": "上海浦东丽晶酒店",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/02036120009mtnvj24505_R_480_480.jpg",
+  "cityName": "上海",
+  "zone": "陆家嘴",
+  "price": "1220.0",
+  "lat": "31.234127",
+  "lng": "121.510239",
+  "originImage": "https://dimg04.c-ctrip.com/images/02036120009mtnvj24505.jpg",
+  "favoriteCount": "39823",
+  "commentScore": 4.7,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068302"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c2b3"
+  },
+  "name": "上海浦东文华东方酒店",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/200w080000002v0er12C4_R_480_480.jpg",
+  "cityName": "Shanghai",
+  "zone": "陆家嘴",
+  "price": "1329.0",
+  "lat": "31.243551",
+  "lng": "121.507333",
+  "originImage": "https://dimg04.c-ctrip.com/images/200w080000002v0er12C4.jpg",
+  "favoriteCount": "42955",
+  "commentScore": 4.7,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068302"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c2b4"
+  },
+  "name": "海南清水湾莱佛士酒店",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/02036120007ne4nhm44A1_R_480_480.jpg",
+  "cityName": "陵水",
+  "zone": "清水湾",
+  "price": "2349.0",
+  "lat": "18.396459",
+  "lng": "109.866537",
+  "originImage": "https://dimg04.c-ctrip.com/images/02036120007ne4nhm44A1.jpg",
+  "favoriteCount": "21959",
+  "commentScore": 4.8,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068302"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c2b5"
+  },
+  "name": "三亚悦榕庄",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/200816000000z7utdC2C7_R_480_480.jpg",
+  "cityName": "三亚",
+  "zone": "大东海/鹿回头风景区/半山半岛",
+  "price": "2988.0",
+  "lat": "18.218465",
+  "lng": "109.497601",
+  "originImage": "https://dimg04.c-ctrip.com/images/200816000000z7utdC2C7.jpg",
+  "favoriteCount": "45678",
+  "commentScore": 4.8,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068302"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c2b6"
+  },
+  "name": "海南土福湾嘉佩乐度假酒店",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/0205h120009lw2p9g2585_R_480_480.jpg",
+  "cityName": "三亚",
+  "zone": "海棠湾/三亚免税店/后海",
+  "price": "3531.0",
+  "lat": "18.40359",
+  "lng": "109.804431",
+  "originImage": "https://dimg04.c-ctrip.com/images/0205h120009lw2p9g2585.jpg",
+  "favoriteCount": "89285",
+  "commentScore": 4.7,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068302"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c2b7"
+  },
+  "name": "三亚保利瑰丽酒店",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/02052120009iadhpp3BE9_R_480_480.jpg",
+  "cityName": "三亚",
+  "zone": "海棠湾/三亚免税店/后海",
+  "price": "2603.0",
+  "lat": "18.319815945921594",
+  "lng": "109.73174188685215",
+  "originImage": "https://dimg04.c-ctrip.com/images/02052120009iadhpp3BE9.jpg",
+  "favoriteCount": "106835",
+  "commentScore": 4.7,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068302"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c2b8"
+  },
+  "name": "三亚太阳湾柏悦酒店",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/020061200094t0j3f7145_R_480_480.jpg",
+  "cityName": "三亚",
+  "zone": "亚龙湾/热带天堂森林公园/博后村",
+  "price": "2580.0",
+  "lat": "18.18917",
+  "lng": "109.610069",
+  "originImage": "https://dimg04.c-ctrip.com/images/020061200094t0j3f7145.jpg",
+  "favoriteCount": "102917",
+  "commentScore": 4.7,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068302"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c2b9"
+  },
+  "name": "三亚海棠湾JW万豪度假酒店",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/200n1c000001dqaj9B596_R_480_480.jpg",
+  "cityName": "三亚",
+  "zone": "海棠湾/三亚免税店/后海",
+  "price": "1579.0",
+  "lat": "18.3484177529645",
+  "lng": "109.741717710173",
+  "originImage": "https://dimg04.c-ctrip.com/images/200n1c000001dqaj9B596.jpg",
+  "favoriteCount": "42520",
+  "commentScore": 4.8,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068302"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c2ba"
+  },
+  "name": "三亚珊瑚湾文华东方酒店",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/0200h120008rujqk26FCB_R_480_480.jpg",
+  "cityName": "三亚",
+  "zone": "大东海/鹿回头风景区/半山半岛",
+  "price": "2252.0",
+  "lat": "18.2109930998549",
+  "lng": "109.53737817401343",
+  "originImage": "https://dimg04.c-ctrip.com/images/0200h120008rujqk26FCB.jpg",
+  "favoriteCount": "72336",
+  "commentScore": 4.7,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068302"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c2bb"
+  },
+  "name": "三亚亚龙湾瑞吉度假酒店",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/0201y120009pkv75iA259_R_480_480.jpg",
+  "cityName": "三亚",
+  "zone": "亚龙湾/热带天堂森林公园/博后村",
+  "price": "1542.0",
+  "lat": "18.21696430076367",
+  "lng": "109.61584316649444",
+  "originImage": "https://dimg04.c-ctrip.com/images/0201y120009pkv75iA259.jpg",
+  "favoriteCount": "105655",
+  "commentScore": 4.7,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068302"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c2bc"
+  },
+  "name": "金茂三亚亚龙湾丽思卡尔顿酒店",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/0205e120009cwnq4g548A_R_480_480.jpg",
+  "cityName": "三亚",
+  "zone": "亚龙湾/热带天堂森林公园/博后村",
+  "price": "2042.0",
+  "lat": "18.225170686228",
+  "lng": "109.6259111166",
+  "originImage": "https://dimg04.c-ctrip.com/images/0205e120009cwnq4g548A.jpg",
+  "favoriteCount": "106128",
+  "commentScore": 4.8,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068302"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c2bd"
+  },
+  "name": "三亚亚特兰蒂斯酒店",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/200s1900000169opw2822_R_480_480.jpg",
+  "cityName": "싼야",
+  "zone": "海棠湾/三亚免税店/后海",
+  "price": "1888.0",
+  "lat": "18.357590136741816",
+  "lng": "109.74233217345311",
+  "originImage": "https://dimg04.c-ctrip.com/images/200s1900000169opw2822.jpg",
+  "favoriteCount": "184040",
+  "commentScore": 4.8,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068302"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c2be"
+  },
+  "name": "三亚艾迪逊酒店",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/0205v1200094ywlv7C989_R_480_480.jpg",
+  "cityName": "三亞",
+  "zone": "海棠湾/三亚免税店/后海",
+  "price": "2615.0",
+  "lat": "18.36381",
+  "lng": "109.749516",
+  "originImage": "https://dimg04.c-ctrip.com/images/0205v1200094ywlv7C989.jpg",
+  "favoriteCount": "160543",
+  "commentScore": 4.8,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068302"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c2bf"
+  },
+  "name": "上海外滩悦榕庄",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/0202k120008imcvhkEC1F_R_480_480.jpg",
+  "cityName": "Shanghai",
+  "zone": "北外滩",
+  "price": "2249.0",
+  "lat": "31.249706",
+  "lng": "121.506251",
+  "originImage": "https://dimg04.c-ctrip.com/images/0202k120008imcvhkEC1F.jpg",
+  "favoriteCount": "70625",
+  "commentScore": 4.7,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068302"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c2c0"
+  },
+  "name": "上海半岛酒店",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/hotel/72000/71743/8c1fbe97b4a34acfb4c028c10027df53_R_480_480.jpg",
+  "cityName": "上海",
+  "zone": "外滩核心区",
+  "price": "2577.0",
+  "lat": "31.241309",
+  "lng": "121.489029",
+  "originImage": "https://dimg04.c-ctrip.com/images/hotel/72000/71743/8c1fbe97b4a34acfb4c028c10027df53.jpg",
+  "favoriteCount": "34557",
+  "commentScore": 4.7,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068302"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c2c1"
+  },
+  "name": "上海和平饭店",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/fd/hotel/g4/M09/E6/DA/CggYHlYwO-CARXgEAA357zFHc7E316_R_480_480.jpg",
+  "cityName": "上海",
+  "zone": "外滩核心区",
+  "price": "1840.0",
+  "lat": "31.23902",
+  "lng": "121.489459",
+  "originImage": "https://dimg04.c-ctrip.com/images/fd/hotel/g4/M09/E6/DA/CggYHlYwO-CARXgEAA357zFHc7E316.jpg",
+  "favoriteCount": "57711",
+  "commentScore": 4.8,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068302"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c2c2"
+  },
+  "name": "苏州太美逸郡酒店",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/200s1f000001gwzfx1685_R_480_480.jpg",
+  "cityName": "苏州",
+  "zone": "太湖风景区／东山／西山",
+  "price": "1512.0",
+  "lat": "31.2182602789308",
+  "lng": "120.384013057735",
+  "originImage": "https://dimg04.c-ctrip.com/images/200s1f000001gwzfx1685.jpg",
+  "favoriteCount": "13361",
+  "commentScore": 4.6,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068302"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c2c3"
+  },
+  "name": "苏州裸心泊度假村",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/0205s120008h6p86h6AC1_R_480_480.jpg",
+  "cityName": "苏州",
+  "zone": "太湖风景区／东山／西山",
+  "price": "5264.0",
+  "lat": "31.313753612156",
+  "lng": "120.328089889693",
+  "originImage": "https://dimg04.c-ctrip.com/images/0205s120008h6p86h6AC1.jpg",
+  "favoriteCount": "8168",
+  "commentScore": 4.6,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068302"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c2c4"
+  },
+  "name": "上海浦东丽思卡尔顿酒店",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/02027120008gnl955BFA0_R_480_480.jpg",
+  "cityName": "上海",
+  "zone": "陆家嘴",
+  "price": "2099.0",
+  "lat": "31.2367",
+  "lng": "121.501",
+  "originImage": "https://dimg04.c-ctrip.com/images/02027120008gnl955BFA0.jpg",
+  "favoriteCount": "44477",
+  "commentScore": 4.7,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068302"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c2c5"
+  },
+  "name": "上海静安香格里拉大酒店",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/hotel/452000/451368/00f6bba719044a4394311d9aaf47eeb7_R_480_480.jpg",
+  "cityName": "上海",
+  "zone": "静安寺/南京西路",
+  "price": "1648.0",
+  "lat": "31.2231053437364",
+  "lng": "121.450725272298",
+  "originImage": "https://dimg04.c-ctrip.com/images/hotel/452000/451368/00f6bba719044a4394311d9aaf47eeb7.jpg",
+  "favoriteCount": "27171",
+  "commentScore": 4.7,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068302"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c2c6"
+  },
+  "name": "上海外滩华尔道夫酒店",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/0222v120008f5pcqw5662_R_480_480.jpg",
+  "cityName": "上海",
+  "zone": "外滩核心区",
+  "price": "1982.0",
+  "lat": "31.2335663542823",
+  "lng": "121.489874124527",
+  "originImage": "https://dimg04.c-ctrip.com/images/0222v120008f5pcqw5662.jpg",
+  "favoriteCount": "57222",
+  "commentScore": 4.6,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068302"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c2c7"
+  },
+  "name": "苏州柏悦酒店",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/200h1h000001hreib2B2A_R_480_480.jpg",
+  "cityName": "苏州",
+  "zone": "金鸡湖东",
+  "price": "1554.0",
+  "lat": "31.3137536049583",
+  "lng": "120.719404751955",
+  "originImage": "https://dimg04.c-ctrip.com/images/200h1h000001hreib2B2A.jpg",
+  "favoriteCount": "19790",
+  "commentScore": 4.7,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068302"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c2c8"
+  },
+  "name": "苏州尼依格罗酒店",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/0202d120009b2j1gqE729_R_480_480.jpg",
+  "cityName": "Suzhou",
+  "zone": "金鸡湖东",
+  "price": "1467.0",
+  "lat": "31.322239278983",
+  "lng": "120.71657675879",
+  "originImage": "https://dimg04.c-ctrip.com/images/0202d120009b2j1gqE729.jpg",
+  "favoriteCount": "20442",
+  "commentScore": 4.8,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068302"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c2c9"
+  },
+  "name": "上海柏悦酒店",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/200d0a0000004lh5aEEDE_R_480_480.jpg",
+  "cityName": "上海",
+  "zone": "陆家嘴",
+  "price": "1799.0",
+  "lat": "31.234437",
+  "lng": "121.507528",
+  "originImage": "https://dimg04.c-ctrip.com/images/200d0a0000004lh5aEEDE.jpg",
+  "favoriteCount": "34607",
+  "commentScore": 4.6,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068302"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c2ca"
+  },
+  "name": "上海艾迪逊酒店",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/0206f12000a0xgazjEF53_R_480_480.jpg",
+  "cityName": "Shanghai",
+  "zone": "外滩核心区",
+  "price": "1870.0",
+  "lat": "31.237736",
+  "lng": "121.485915",
+  "originImage": "https://dimg04.c-ctrip.com/images/0206f12000a0xgazjEF53.jpg",
+  "favoriteCount": "26434",
+  "commentScore": 4.6,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068302"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c2cb"
+  },
+  "name": "上海静安瑞吉酒店",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/200t0j000000aja9dE53C_R_480_480.jpg",
+  "cityName": "上海",
+  "zone": "静安寺/南京西路",
+  "price": "1642.0",
+  "lat": "31.231169752425",
+  "lng": "121.45593975533",
+  "originImage": "https://dimg04.c-ctrip.com/images/200t0j000000aja9dE53C.jpg",
+  "favoriteCount": "25538",
+  "commentScore": 4.7,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068302"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c2cc"
+  },
+  "name": "南京丽思卡尔顿酒店",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/02013120009t590tb40D3_R_480_480.jpg",
+  "cityName": "南京",
+  "zone": "新街口/市中心",
+  "price": "2134.0",
+  "lat": "32.0439630788828",
+  "lng": "118.784897156279",
+  "originImage": "https://dimg04.c-ctrip.com/images/02013120009t590tb40D3.jpg",
+  "favoriteCount": "15709",
+  "commentScore": 4.8,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068302"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c2cd"
+  },
+  "name": "三亚海棠湾仁恒皇冠假日度假酒店",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/0204y120006o2fxcp41A8_R_480_480.jpg",
+  "cityName": "三亞",
+  "zone": "海棠湾/三亚免税店/后海",
+  "price": "1566.0",
+  "lat": "18.362797",
+  "lng": "109.749074",
+  "originImage": "https://dimg04.c-ctrip.com/images/0204y120006o2fxcp41A8.jpg",
+  "favoriteCount": "141222",
+  "commentScore": 4.9,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068302"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c2ce"
+  },
+  "name": "上海外滩W酒店",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/0204g1200097ae0x0D5A0_R_480_480.jpg",
+  "cityName": "上海",
+  "zone": "北外滩",
+  "price": "2075.0",
+  "lat": "31.24917275392",
+  "lng": "121.49643208707",
+  "originImage": "https://dimg04.c-ctrip.com/images/0204g1200097ae0x0D5A0.jpg",
+  "favoriteCount": "55822",
+  "commentScore": 4.6,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068302"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c2cf"
+  },
+  "name": "J酒店上海中心",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/0201h120008ryk2heDAB9_R_480_480.jpg",
+  "cityName": "上海",
+  "zone": "陆家嘴",
+  "price": "4680.0",
+  "lat": "31.233538525240814",
+  "lng": "121.50540407659514",
+  "originImage": "https://dimg04.c-ctrip.com/images/0201h120008ryk2heDAB9.jpg",
+  "favoriteCount": "23368",
+  "commentScore": 4.9,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068302"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c2d0"
+  },
+  "name": "上海万达瑞华酒店",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/200u0k000000c9j37749C_R_480_480.jpg",
+  "cityName": "上海",
+  "zone": "外滩核心区",
+  "price": "1888.0",
+  "lat": "31.227786",
+  "lng": "121.496688",
+  "originImage": "https://dimg04.c-ctrip.com/images/200u0k000000c9j37749C.jpg",
+  "favoriteCount": "40916",
+  "commentScore": 4.8,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068302"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c2d1"
+  },
+  "name": "上海佘山世茂洲际酒店(世茂深坑酒店)",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/200c10000000q53uv93B5_R_480_480.jpg",
+  "cityName": "上海",
+  "zone": "佘山/松江大学城",
+  "price": "2535.0",
+  "lat": "31.059236",
+  "lng": "121.154407",
+  "originImage": "https://dimg04.c-ctrip.com/images/200c10000000q53uv93B5.jpg",
+  "favoriteCount": "64919",
+  "commentScore": 4.6,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068303"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+},{
+  "_id": {
+    "$oid": "6347e11c27f5ac631be6c2d2"
+  },
+  "name": "上海宝格丽酒店",
+  "pictureUrl": "https://dimg04.c-ctrip.com/images/0202w1200020tyjmqA8E4_R_480_480.jpg",
+  "cityName": "上海",
+  "zone": "北外滩",
+  "price": "4664.0",
+  "lat": "31.242714",
+  "lng": "121.482087",
+  "originImage": "https://dimg04.c-ctrip.com/images/0202w1200020tyjmqA8E4.jpg",
+  "favoriteCount": "32228",
+  "commentScore": 4.8,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1665655068303"
+    }
+  },
+  "_class": "com.wangyousong.app.growthbackend.domain.Hotel"
+}]
