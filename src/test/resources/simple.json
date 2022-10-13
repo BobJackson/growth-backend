@@ -1,0 +1,174 @@
+{
+  "ResponseStatus": {
+    "Timestamp": "/Date(1665649449168+0800)/",
+    "Ack": "Success",
+    "Errors": [],
+    "Extension": [
+      {
+        "Id": "CLOGGING_TRACE_ID",
+        "Value": "8228257670880702270"
+      },
+      {
+        "Id": "RootMessageId",
+        "Value": "100025527-0a70c29f-462680-1402471"
+      }
+    ]
+  },
+  "ResultCode": 0,
+  "TotalRecord": 129,
+  "NextCursor": "2022-10-13 15:13:28.327",
+  "FavoriteList": [
+    {
+      "FavoriteID": "17852059",
+      "BizType": "HOTEL",
+      "ProductType": "HOTEL_DOMESTIC",
+      "ProductID": "78286701",
+      "ProductName": "青岛瑞吉酒店",
+      "FromCityID": 7,
+      "ToCityID": 7,
+      "SaleCityID": 0,
+      "Url": "http://hotels.ctrip.com/hotel/78286701.html?checkIn=2022-10-13&checkOut=2022-10-14&fromfavorites=1",
+      "UrlForH5": "https://m.ctrip.com/webapp/hotel/hoteldetail/78286701.html?days=1&daylater=0&fromfavorites=1",
+      "UrlForApp": "ctrip://wireless/InlandHotel?hotelId=78286701&cityId=7&hotelDataType=1&starLevel=5&checkInDate=20221013&checkOutDate=20221014&fromfavorites=1",
+      "PicUrl": "https://dimg04.c-ctrip.com/images/0201y120008urclsk1369_R_480_480.jpg",
+      "Zone": "五四广场",
+      "Star": 5.0,
+      "StarType": "D",
+      "CommentScore": 4.8,
+      "Price": 1516.0,
+      "OriginalPrice": 0.0,
+      "StatusID": 1,
+      "CreateTime": "/Date(1665645208327+0800)/",
+      "ExtendList": [
+        {
+          "Name": "UrlForH5",
+          "Value": "https://m.ctrip.com/webapp/hotel/hoteldetail/78286701.html?days=1&daylater=0&fromfavorites=1"
+        },
+        {
+          "Name": "UrlForApp",
+          "Value": "ctrip://wireless/InlandHotel?hotelId=78286701&cityId=7&hotelDataType=1&starLevel=5&checkInDate=20221013&checkOutDate=20221014&fromfavorites=1"
+        },
+        {
+          "Name": "UrlForOnline",
+          "Value": "http://hotels.ctrip.com/hotel/78286701.html?checkIn=2022-10-13&checkOut=2022-10-14&fromfavorites=1"
+        },
+        {
+          "Name": "StarType",
+          "Value": "D"
+        },
+        {
+          "Name": "FromCityName",
+          "Value": "칭다오"
+        },
+        {
+          "Name": "CommentScore",
+          "Value": "4.8"
+        },
+        {
+          "Name": "CityId",
+          "Value": "7"
+        },
+        {
+          "Name": "StarLicenceType",
+          "Value": "0"
+        },
+        {
+          "Name": "FavoriteId",
+          "Value": "17852059"
+        },
+        {
+          "Name": "MasterHotelID",
+          "Value": "78286701"
+        },
+        {
+          "Name": "Search",
+          "Value": "0"
+        },
+        {
+          "Name": "Gdlon",
+          "Value": "120.36995781156389"
+        },
+        {
+          "Name": "CityName",
+          "Value": "칭다오"
+        },
+        {
+          "Name": "Zone",
+          "Value": "五四广场"
+        },
+        {
+          "Name": "Price",
+          "Value": "1516.0"
+        },
+        {
+          "Name": "Lat",
+          "Value": "36.056439049277294"
+        },
+        {
+          "Name": "Star",
+          "Value": "5"
+        },
+        {
+          "Name": "Lng",
+          "Value": "120.36995781156389"
+        },
+        {
+          "Name": "EName",
+          "Value": "The St. Regis Qingdao"
+        },
+        {
+          "Name": "Glat",
+          "Value": "36.056439049277294"
+        },
+        {
+          "Name": "FavoritePrice",
+          "Value": "1516.0"
+        },
+        {
+          "Name": "Glng",
+          "Value": "120.36995781156389"
+        },
+        {
+          "Name": "CountryID",
+          "Value": "1"
+        },
+        {
+          "Name": "CommentCount",
+          "Value": "1151"
+        },
+        {
+          "Name": "isShowPrice",
+          "Value": "1"
+        },
+        {
+          "Name": "OriginImage",
+          "Value": "https://dimg04.c-ctrip.com/images/0201y120008urclsk1369.jpg"
+        },
+        {
+          "Name": "Gdlat",
+          "Value": "36.056439049277294"
+        },
+        {
+          "Name": "IsMainlandCity",
+          "Value": "1"
+        },
+        {
+          "Name": "FavoriteCount",
+          "Value": "7490"
+        }
+      ],
+      "TagList": [],
+      "FavoritePrice": 1516.0,
+      "PriceStatusID": 3,
+      "FavoriteCount": 7490,
+      "CommentCount": 1151,
+      "ProductTag": "酒店",
+      "CommentFullScore": 5.0,
+      "QueryUserType": "U",
+      "Offset": 0
+    }
+  ],
+  "Today": "/Date(1665649449167+0800)/",
+  "PrevCursor": "2022-10-13 15:13:28.327",
+  "HasNextPage": true
+}
