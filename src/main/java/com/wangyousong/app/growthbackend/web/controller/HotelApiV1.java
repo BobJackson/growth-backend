@@ -25,8 +25,9 @@ public class HotelApiV1 {
     public R<List<HotelDtoV1>> list() {
         List<HotelDtoV1> data = hotelRepository.findAll()
                 .stream()
-                .map(it -> new HotelDtoV1(it.getId(), it.getName(), it.getPictureUrl()))
+                .map(HotelDtoV1::toHotelDtoV1)
                 .toList();
         return R.success(data);
     }
+
 }

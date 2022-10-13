@@ -11,6 +11,7 @@ import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+import java.util.Objects;
 
 public class HotelDataCollector {
 
@@ -27,12 +28,37 @@ public class HotelDataCollector {
             if (!"酒店".equals(productTag.toString())) {
                 continue;
             }
-            Object productName = m.get("ProductName");
-            Object picUrl = m.get("PicUrl");
-
             Hotel hotel = new Hotel();
-            hotel.setName(productName.toString());
-            hotel.setPictureUrl(picUrl.toString());
+            hotel.setName(m.get("ProductName").toString());
+            hotel.setPictureUrl(m.get("PicUrl").toString());
+            hotel.setCommentScore(Double.parseDouble(m.get("CommentScore").toString()));
+
+            List<Map> extList = (List<Map>) m.get("ExtendList");
+            for(Map ext : extList){
+                String name = (String) ext.get("Name");
+                String value = (String) ext.get("Value");
+                if(Objects.equals(name, "CityName")){
+                    hotel.setCityName(value);
+                }
+                if(Objects.equals(name, "Zone")){
+                    hotel.setZone(value);
+                }
+                if(Objects.equals(name, "Price")){
+                    hotel.setPrice(value);
+                }
+                if(Objects.equals(name, "Lat")){
+                    hotel.setLat(value);
+                }
+                if(Objects.equals(name, "Lng")){
+                    hotel.setLng(value);
+                }
+                if(Objects.equals(name, "OriginImage")){
+                    hotel.setOriginImage(value);
+                }
+                if(Objects.equals(name, "FavoriteCount")){
+                    hotel.setFavoriteCount(value);
+                }
+            }
             hotels.add(hotel);
         }
         return hotels;
