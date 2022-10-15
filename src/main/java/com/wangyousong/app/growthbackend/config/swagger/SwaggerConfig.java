@@ -22,12 +22,15 @@ public class SwaggerConfig {
     @Value("${spring.profiles.active:NA}")
     private String active;
 
+    @Value("${server.servlet.context-path}")
+    private String contextPath;
+
     @Bean
     public Docket createRestApi() {
         return new Docket(DocumentationType.OAS_30)
                 .enable(!"prod".equals(active))
                 .apiInfo(apiInfo())
-                .host("http://localhost:8080/swagger-ui")
+                .host("http://localhost:8080" + contextPath + "/swagger-ui")
                 .select()
                 .apis(RequestHandlerSelectors.basePackage("com.wangyousong.app.growthbackend.web.controller"))
                 .paths(PathSelectors.any())
