@@ -5,13 +5,16 @@ import com.wangyousong.app.growthbackend.common.R;
 import com.wangyousong.app.growthbackend.service.TagService;
 import com.wangyousong.app.growthbackend.web.request.TagRequest;
 import com.wangyousong.app.growthbackend.web.response.TagResponse;
+import io.swagger.annotations.Api;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 import java.util.List;
 
-@RestController("/openapi/tags")
+@Api(tags = "tags api")
+@RestController
+@RequestMapping("/openapi/tags")
 public class TagApi {
 
     @Resource
