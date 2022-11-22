@@ -77,6 +77,12 @@ public class AliYunOssServiceImpl implements AliYunOssService {
     }
 
     @Override
+    public String upload(File file, String prefix) {
+        oss.putObject(config.getBucketName(), prefix + file.getName(), file);
+        return generateUrl(file.getName());
+    }
+
+    @Override
     public String upload(String key, File file) {
         oss.putObject(config.getBucketName(), key, file);
         return generateUrl(key);
@@ -176,13 +182,13 @@ public class AliYunOssServiceImpl implements AliYunOssService {
     private String generateUrl(String key) {
         Date expiration = new Date(System.currentTimeMillis() + TEN_YEAR);
         URL url = oss.generatePresignedUrl(config.getBucketName(), key, expiration);
-        if (!config.getMappingEnabled()) {
+        if (Boolean.FALSE.equals(config.getMappingEnabled())) {
             return url.toString();
         }
         URI mappingURI;
         try {
             URI uri = url.toURI();
-            if (config.getMappingEnabled()) {
+            if (Boolean.TRUE.equals(config.getMappingEnabled())) {
                 HttpHost httpHost = new HttpHost(config.getMappingDomain());
                 mappingURI = URIUtils.rewriteURI(uri, httpHost);
             } else {

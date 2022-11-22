@@ -13,6 +13,8 @@ import java.util.List;
 public interface AliYunOssService {
     String upload(File file);
 
+    String upload(File file, String prefix);
+
     String upload(String key, File file);
 
     List<String> upload(MultipartFile[] files);
