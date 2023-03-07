@@ -21,4 +21,8 @@ public class R<T> {
         return new R<>(data, true, "ok");
     }
 
+    public static R<Void> success() {
+        return new R<>(null, true, "ok");
+    }
+
 }

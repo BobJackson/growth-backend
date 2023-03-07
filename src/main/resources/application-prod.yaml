@@ -10,3 +10,8 @@ spring:
 server:
   servlet:
     context-path: /api
+
+book:
+  cache:
+    clear:
+      token: Growth123

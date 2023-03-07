@@ -9,4 +9,6 @@ public interface BookService {
     String create(BookRequest dto);
 
     Page<BookResponse> list(PageRequest pageRequest);
+
+    void clearBookListCache();
 }

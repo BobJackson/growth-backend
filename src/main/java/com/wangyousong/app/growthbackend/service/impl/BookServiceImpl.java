@@ -12,7 +12,9 @@ import com.wangyousong.app.growthbackend.service.CategoryService;
 import com.wangyousong.app.growthbackend.service.TagService;
 import com.wangyousong.app.growthbackend.web.request.BookRequest;
 import com.wangyousong.app.growthbackend.web.response.BookResponse;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.collections4.CollectionUtils;
+import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
@@ -23,6 +25,7 @@ import java.util.Collections;
 
 import static com.wangyousong.app.growthbackend.common.DefaultSort.DEFAULT_SORT;
 
+@Slf4j
 @Service
 public class BookServiceImpl implements BookService {
 
@@ -68,5 +71,11 @@ public class BookServiceImpl implements BookService {
         pageRequest.withSort(DEFAULT_SORT);
         Page<Book> books = repository.findAll(pageRequest);
         return books.map(BookResponse::new);
+    }
+
+    @CacheEvict(cacheNames = {"bookList"})
+    @Override
+    public void clearBookListCache(){
+        log.info("will clear book list cache");
     }
 }
