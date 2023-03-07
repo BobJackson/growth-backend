@@ -16,3 +16,7 @@ aliyun:
     accessKeySecret: your-secret
     bucketName: growth-public
 
+book:
+  cache:
+    clear:
+      token: 123
