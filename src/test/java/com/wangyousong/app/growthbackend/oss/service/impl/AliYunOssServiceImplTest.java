@@ -7,10 +7,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import java.io.File;
+import java.io.IOException;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Objects;
+import java.util.concurrent.TimeUnit;
 
 import static com.wangyousong.app.growthbackend.tools.PdfToImageUtil.COVERS_DIR;
 import static org.assertj.core.api.Assertions.assertThat;
@@ -40,5 +42,11 @@ class AliYunOssServiceImplTest {
         String key = aliYunOssService.upload(latestPdf, "books/it/");
         System.out.println(key);
         assertNotNull(key);
+    }
+
+    @Test
+    void should_execute_clear_cache() throws IOException {
+        String command = "curl --location --request DELETE 'https://books.wangyousong.com/api/v1/books/actions/delete-cache?token=Growth123'";
+        Runtime.getRuntime().exec(command);
     }
 }
