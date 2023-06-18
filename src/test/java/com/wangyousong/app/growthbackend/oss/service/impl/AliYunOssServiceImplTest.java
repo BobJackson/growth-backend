@@ -16,7 +16,7 @@ import java.util.concurrent.TimeUnit;
 
 import static com.wangyousong.app.growthbackend.tools.PdfToImageUtil.COVERS_DIR;
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 @SpringBootTest
 class AliYunOssServiceImplTest {
@@ -45,8 +45,10 @@ class AliYunOssServiceImplTest {
     }
 
     @Test
-    void should_execute_clear_cache() throws IOException {
+    void should_execute_clear_cache() throws IOException, InterruptedException {
         String command = "curl --location --request DELETE 'https://books.wangyousong.com/api/v1/books/actions/delete-cache?token=Growth123'";
-        Runtime.getRuntime().exec(command);
+        Process process = Runtime.getRuntime().exec(command);
+        boolean wait = process.waitFor(10, TimeUnit.SECONDS);
+        assertThat(wait).isTrue();
     }
 }
