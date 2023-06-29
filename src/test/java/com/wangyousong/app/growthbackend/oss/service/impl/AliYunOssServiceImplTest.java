@@ -88,9 +88,9 @@ class AliYunOssServiceImplTest {
 
     @Test
     void should_delete() {
-        String bookId = "";
+        String bookId = "649d96c3091d485a899cf7ad";
         RestTemplate restTemplate = new RestTemplate();
-        restTemplate.delete("https://books.wangyousong.com/api/v1/books/" + bookId + "?token=123");
+        restTemplate.delete("https://books.wangyousong.com/api/v1/books/" + bookId + "?token=Growth123");
     }
 
     @Test
