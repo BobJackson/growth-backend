@@ -56,4 +56,13 @@ public class BookApiV1 {
     public R<Boolean> create(@RequestBody BookDtoV1 dto) {
         return R.success(simpleBookService.create(dto));
     }
+
+    @DeleteMapping("/{id}")
+    public R<Void> delete(@PathVariable String id, @RequestParam String token) {
+        if (!Objects.equals(token, this.token)) {
+            throw new IllegalArgumentException("token is not right!");
+        }
+        simpleBookService.deleteById(id);
+        return R.success();
+    }
 }

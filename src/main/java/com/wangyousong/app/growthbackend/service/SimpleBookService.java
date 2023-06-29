@@ -11,4 +11,6 @@ public interface SimpleBookService {
     boolean batchCreate(List<String> urls);
 
     List<SimpleBook> listAll();
+
+    void deleteById(String id);
 }

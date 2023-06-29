@@ -77,11 +77,20 @@ class AliYunOssServiceImplTest {
         }
         HttpEntity<String> request =
                 new HttpEntity<>(personJsonObject.toString(), headers);
-        restTemplate.postForEntity("https://books.wangyousong.com/api/v1/books", request, Boolean.class);
+        restTemplate.postForEntity("https://books.wangyousong.com/api/v1/books", request, Object.class);
     }
 
     private static String extractUrl(String rawUrl) {
-        return rawUrl.substring(0, rawUrl.indexOf("?Expires=")).replace("http:", "https:");
+        return rawUrl.substring(0, rawUrl.indexOf("?Expires="))
+                .replace("http:", "https:")
+                .replace("growth-public.oss-cn-shanghai.aliyuncs.com/", "growth-public.oss-cn-shanghai.aliyuncs.com/books/it/");
+    }
+
+    @Test
+    void should_delete() {
+        String bookId = "";
+        RestTemplate restTemplate = new RestTemplate();
+        restTemplate.delete("https://books.wangyousong.com/api/v1/books/" + bookId + "?token=123");
     }
 
     @Test

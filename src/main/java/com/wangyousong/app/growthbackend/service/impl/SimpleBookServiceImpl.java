@@ -30,4 +30,9 @@ public class SimpleBookServiceImpl implements SimpleBookService {
     public List<SimpleBook> listAll() {
         return repository.findAll();
     }
+
+    @Override
+    public void deleteById(String id) {
+        repository.deleteById(id);
+    }
 }
