@@ -1,10 +1,16 @@
 package com.wangyousong.app.growthbackend.oss.service.impl;
 
 import com.wangyousong.app.growthbackend.oss.service.AliYunOssService;
+import com.wangyousong.app.growthbackend.service.SimpleBookService;
 import com.wangyousong.app.growthbackend.tools.PdfToImageUtil;
+import org.json.JSONException;
+import org.json.JSONObject;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.http.HttpEntity;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.MediaType;
 import org.springframework.web.client.RestTemplate;
 
 import java.io.File;
@@ -12,6 +18,7 @@ import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Objects;
+import java.util.stream.Collectors;
 
 import static com.wangyousong.app.growthbackend.tools.PdfToImageUtil.COVERS_DIR;
 import static org.assertj.core.api.Assertions.assertThat;
@@ -20,14 +27,25 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 @SpringBootTest
 class AliYunOssServiceImplTest {
 
+    public static final String PREFIX = "https://growth-public.oss-cn-shanghai.aliyuncs.com/";
     @Autowired
     private AliYunOssService aliYunOssService;
+    @Autowired
+    private SimpleBookService simpleBookService;
 
     @Test
     void listAllFiles() {
         List<String> keys = aliYunOssService.listAllFiles("books/it/");
-        keys.forEach(System.out::println);
+        String urls = keys.stream()
+                .map(it -> PREFIX + it)
+                .map(this::wrapQuotation)
+                .collect(Collectors.joining(","));
+        System.out.println(urls);
         assertThat(keys).isNotEmpty();
+    }
+
+    private String wrapQuotation(String it) {
+        return "\"" + it + "\"";
     }
 
     @Test
@@ -40,7 +58,30 @@ class AliYunOssServiceImplTest {
         System.out.println(latestPdf.getName());
         String key = aliYunOssService.upload(latestPdf, "books/it/");
         System.out.println(key);
+
+        postForCreate(key);
+
         assertNotNull(key);
+    }
+
+    private static void postForCreate(String key) {
+        RestTemplate restTemplate = new RestTemplate();
+        HttpHeaders headers = new HttpHeaders();
+        headers.setContentType(MediaType.APPLICATION_JSON);
+        JSONObject personJsonObject = new JSONObject();
+        try {
+            personJsonObject.put("id", null);
+            personJsonObject.put("cover", extractUrl(key));
+        } catch (JSONException e) {
+            throw new RuntimeException(e);
+        }
+        HttpEntity<String> request =
+                new HttpEntity<>(personJsonObject.toString(), headers);
+        restTemplate.postForEntity("https://books.wangyousong.com/api/v1/books", request, Boolean.class);
+    }
+
+    private static String extractUrl(String rawUrl) {
+        return rawUrl.substring(0, rawUrl.indexOf("?Expires=")).replace("http:", "https:");
     }
 
     @Test

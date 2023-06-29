@@ -47,8 +47,13 @@ public class BookApiV1 {
         return success();
     }
 
-    @PostMapping
-    public R<Boolean> create(@RequestBody SimpleBookDtoList list) {
+    @PostMapping("/bulk")
+    public R<Boolean> batchCreate(@RequestBody SimpleBookDtoList list) {
         return R.success(simpleBookService.batchCreate(list.getUrls()));
+    }
+
+    @PostMapping()
+    public R<Boolean> create(@RequestBody BookDtoV1 dto) {
+        return R.success(simpleBookService.create(dto));
     }
 }
