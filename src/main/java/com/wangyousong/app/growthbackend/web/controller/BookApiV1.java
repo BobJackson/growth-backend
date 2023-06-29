@@ -1,15 +1,16 @@
 package com.wangyousong.app.growthbackend.web.controller;
 
-import com.wangyousong.app.growthbackend.common.IdService;
 import com.wangyousong.app.growthbackend.common.R;
-import com.wangyousong.app.growthbackend.oss.service.AliYunOssService;
 import com.wangyousong.app.growthbackend.service.BookService;
+import com.wangyousong.app.growthbackend.service.SimpleBookService;
 import com.wangyousong.app.growthbackend.web.controller.dto.BookDtoV1;
+import com.wangyousong.app.growthbackend.web.controller.dto.SimpleBookDtoList;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Objects;
 
@@ -18,25 +19,21 @@ import static com.wangyousong.app.growthbackend.common.R.success;
 @RestController
 @RequestMapping("/v1/books")
 public class BookApiV1 {
-
-    @Resource
-    private IdService idService;
-
-    @Resource
-    private AliYunOssService aliYunOssService;
-
     @Resource
     private BookService bookService;
     @Value("${book.cache.clear.token}")
     private String token;
+    @Resource
+    private SimpleBookService simpleBookService;
 
     @Cacheable(cacheNames = {"bookList"})
     @CrossOrigin
     @GetMapping
     public R<List<BookDtoV1>> list() {
-        List<String> keys = aliYunOssService.listAllFiles("books/it/");
-        List<BookDtoV1> result = keys.stream()
-                .map(it -> new BookDtoV1(idService.generateId(), "https://growth-public.oss-cn-shanghai.aliyuncs.com/" + it))
+        List<BookDtoV1> result = simpleBookService.listAll()
+                .stream()
+                .map(it -> new BookDtoV1(it.getId(), it.getCoverUrl()))
+                .sorted(Comparator.comparing(BookDtoV1::cover))
                 .toList();
         return success(result);
     }
@@ -48,5 +45,10 @@ public class BookApiV1 {
         }
         bookService.clearBookListCache();
         return success();
+    }
+
+    @PostMapping
+    public R<Boolean> create(@RequestBody SimpleBookDtoList list) {
+        return R.success(simpleBookService.batchCreate(list.getUrls()));
     }
 }
