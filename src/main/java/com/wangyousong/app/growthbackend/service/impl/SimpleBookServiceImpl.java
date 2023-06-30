@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class SimpleBookServiceImpl implements SimpleBookService {
@@ -16,6 +17,8 @@ public class SimpleBookServiceImpl implements SimpleBookService {
 
     @Override
     public boolean create(BookDtoV1 dto) {
+        Optional<SimpleBook> optional = repository.findByCoverUrl(dto.cover());
+        if (optional.isPresent()) return false;
         repository.save(new SimpleBook(dto.cover()));
         return true;
     }
