@@ -50,6 +50,19 @@ class AliYunOssServiceImplTest {
 
     @Test
     void should_upload_file() {
+        String pathname = "/Users/bob/Desktop/covers/it/OReilly.Optimizing.Java.2018.4.jpg";
+        File latestPdf = new File(pathname);
+        System.out.println(latestPdf.getName());
+        String key = aliYunOssService.upload(latestPdf, "books/it/");
+        System.out.println(key);
+
+        postForCreate(key);
+
+        assertNotNull(key);
+    }
+
+    @Test
+    void should_convert_then_upload_file() {
         PdfToImageUtil.main(new String[]{});
         File latestPdf = Arrays.stream(Objects.requireNonNull(new File(COVERS_DIR).listFiles()))
                 .filter(it -> it.getName().contains(".jpg"))

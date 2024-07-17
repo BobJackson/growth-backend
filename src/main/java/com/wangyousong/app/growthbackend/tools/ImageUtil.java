@@ -14,7 +14,7 @@ public class ImageUtil {
         removeBlackBorder();
     }
 
-    private static void removeBlackBorder() throws IOException {
+    public static boolean removeBlackBorder() throws IOException {
         String inputFolder = "/Users/bob/Downloads/book_images_copy";
         String outputFolder = "/Users/bob/Downloads/book_images_handled_copy";
 
@@ -24,7 +24,7 @@ public class ImageUtil {
 
         if (images.isEmpty()) {
             System.out.println("Input folder not found.");
-            return;
+            return false;
         }
 
         for (File imageFile : images) {
@@ -49,8 +49,9 @@ public class ImageUtil {
             }
 
             // Save the cropped image
-            ImageIO.write(croppedImage, "jpg", new File(outputFolder));
+            ImageIO.write(croppedImage, "jpg", new File(outputFolder + File.separator + imageFile.getName()));
         }
+        return true;
     }
 
 
