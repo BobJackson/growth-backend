@@ -22,7 +22,7 @@ public class MovieApiV1 {
     @Cacheable(cacheNames = "movieList")
     @CrossOrigin
     @GetMapping
-    public R<List<MovieDtoV1>> list(){
+    public R<List<MovieDtoV1>> list() {
         List<MovieDtoV1> movies = List.of(
                 new MovieDtoV1(idService.generateId(), "https://growth-public.oss-cn-shanghai.aliyuncs.com/movies/imdb/compressed/avatar.jpeg"),
                 new MovieDtoV1(idService.generateId(), "https://growth-public.oss-cn-shanghai.aliyuncs.com/movies/imdb/compressed/black-pather.jpg"),

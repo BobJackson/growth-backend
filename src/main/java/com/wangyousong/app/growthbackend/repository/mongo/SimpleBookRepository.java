@@ -5,6 +5,6 @@ import org.springframework.data.mongodb.repository.MongoRepository;
 
 import java.util.Optional;
 
-public interface SimpleBookRepository extends MongoRepository<SimpleBook,String> {
+public interface SimpleBookRepository extends MongoRepository<SimpleBook, String> {
     Optional<SimpleBook> findByCoverUrl(String cover);
 }

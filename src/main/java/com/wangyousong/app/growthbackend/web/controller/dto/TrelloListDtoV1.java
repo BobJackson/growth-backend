@@ -22,7 +22,7 @@ public class TrelloListDtoV1 {
         this.tasks = Optional.ofNullable(trelloList.getTasks())
                 .orElse(new ArrayList<>())
                 .stream()
-                .map(it-> new TrelloTaskDtoV1(it.getId(), it.getText()))
+                .map(it -> new TrelloTaskDtoV1(it.getId(), it.getText()))
                 .toList();
     }
 

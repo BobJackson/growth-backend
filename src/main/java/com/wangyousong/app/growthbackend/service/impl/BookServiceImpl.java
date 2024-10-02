@@ -75,7 +75,7 @@ public class BookServiceImpl implements BookService {
 
     @CacheEvict(cacheNames = {"bookList"})
     @Override
-    public void clearBookListCache(){
+    public void clearBookListCache() {
         log.info("will clear book list cache");
     }
 }

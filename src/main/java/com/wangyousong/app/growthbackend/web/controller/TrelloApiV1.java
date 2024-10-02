@@ -14,12 +14,12 @@ public class TrelloApiV1 {
     private final TrelloListService service;
 
     @PostMapping("/save")
-    public R<Boolean> save(@RequestBody TrelloDtoV1 data){
+    public R<Boolean> save(@RequestBody TrelloDtoV1 data) {
         return R.success(service.saveAll(data.toTrelloList()));
     }
 
     @GetMapping("/load")
-    public R<TrelloDtoV1> load(){
+    public R<TrelloDtoV1> load() {
         TrelloDtoV1 data = new TrelloDtoV1(service.listAll());
         return R.success(data);
     }

@@ -71,8 +71,7 @@ public class PdfWaterMarkUtil {
         ArrayList<Integer> remove = new ArrayList<>();
         for (int i = 0; i < tokens.size(); i++) {
             Object token = tokens.get(i);
-            if (token instanceof COSName) {
-                COSName cosname = (COSName) token;
+            if (token instanceof COSName cosname) {
                 if (cosname.getName().startsWith("Fm")) {
                     i = removeState(tokens, remove, i);
                 }

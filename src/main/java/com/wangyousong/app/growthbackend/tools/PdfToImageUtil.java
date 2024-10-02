@@ -41,9 +41,9 @@ public class PdfToImageUtil {
 
     @SneakyThrows
     public static void pdfToImage(File pdf) {
-        if(!pdf.getName().contains(".pdf")) return;
+        if (!pdf.getName().contains(".pdf")) return;
         File dest = new File(COVERS_DIR + cutBookName(pdf.getName()) + "." + IMG_TYPE);
-        if(dest.exists()) return;
+        if (dest.exists()) return;
         try (PDDocument document = PDDocument.load(pdf)) {
             PDFRenderer renderer = new PDFRenderer(document);
             for (int i = 0; i < 1; ++i) {

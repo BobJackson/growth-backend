@@ -25,7 +25,6 @@ import java.util.*;
 import java.util.stream.IntStream;
 
 
-
 /**
  * @author: wangyousong
  * @date: 2019.09.24
@@ -53,7 +52,7 @@ public class AliYunOssServiceImpl implements AliYunOssService {
         return summaries
                 .stream()
                 .map(OSSObjectSummary::getKey)
-                .filter(it-> !Objects.equals(it, keyPrefix))
+                .filter(it -> !Objects.equals(it, keyPrefix))
                 .toList();
     }
 
