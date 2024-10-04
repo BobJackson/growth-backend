@@ -9,8 +9,9 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/v1/paint")
+@RequestMapping("/v1/paint")
 @RequiredArgsConstructor
+@CrossOrigin
 public class PaintApiV1 {
     private final ProjectService projectService;
 
