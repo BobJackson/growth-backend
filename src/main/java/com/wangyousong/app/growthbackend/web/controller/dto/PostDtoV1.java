@@ -5,6 +5,10 @@ import com.wangyousong.app.growthbackend.domain.Post;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.LocalTime;
+
 @Data
 @NoArgsConstructor
 public class PostDtoV1 {
@@ -23,5 +27,13 @@ public class PostDtoV1 {
         dto.setCategory(category);
         dto.setDate(post.formattedCreateDate());
         return dto;
+    }
+
+    public Post toEntity(String categoryId) {
+        Post post = new Post();
+        BeanUtil.copyProperties(this, post);
+        post.setPostCategoryId(categoryId);
+        post.setCreatedAt(LocalDateTime.of(LocalDate.parse(date), LocalTime.now()));
+        return post;
     }
 }

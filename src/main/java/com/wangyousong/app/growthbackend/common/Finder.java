@@ -20,4 +20,11 @@ public class Finder<T, R> {
                 .findAny()
                 .orElseThrow();
     }
+
+    public T findEntityBy(R identity) {
+        return items.parallelStream()
+                .filter(it -> Objects.equals(mapping.apply(it), identity))
+                .findAny()
+                .orElseThrow();
+    }
 }

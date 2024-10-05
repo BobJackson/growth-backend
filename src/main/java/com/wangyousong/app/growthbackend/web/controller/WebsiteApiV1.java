@@ -3,6 +3,7 @@ package com.wangyousong.app.growthbackend.web.controller;
 import com.wangyousong.app.growthbackend.common.R;
 import com.wangyousong.app.growthbackend.service.PostCategoryService;
 import com.wangyousong.app.growthbackend.service.PostService;
+import com.wangyousong.app.growthbackend.web.controller.dto.BatchSavePostsDtoV1;
 import com.wangyousong.app.growthbackend.web.controller.dto.CreateCategoryDtoV1;
 import com.wangyousong.app.growthbackend.web.controller.dto.PostCategoryDtoV1;
 import com.wangyousong.app.growthbackend.web.controller.dto.PostDtoV1;
@@ -35,5 +36,10 @@ public class WebsiteApiV1 {
     @CrossOrigin
     public R<List<PostDtoV1>> listAllPosts() {
         return R.success(postService.listAll());
+    }
+
+    @PostMapping("/posts/bulk")
+    public R<Boolean> batchSave(@RequestBody BatchSavePostsDtoV1 dto) {
+        return R.success(postService.batchSave(dto));
     }
 }
