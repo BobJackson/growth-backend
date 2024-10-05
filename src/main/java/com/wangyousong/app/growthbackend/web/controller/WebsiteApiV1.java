@@ -42,4 +42,9 @@ public class WebsiteApiV1 {
     public R<Boolean> batchSave(@RequestBody BatchSavePostsDtoV1 dto) {
         return R.success(postService.batchSave(dto));
     }
+
+    @GetMapping("/posts/{postId}")
+    public R<PostDtoV1> details(@PathVariable String postId) {
+        return R.success(postService.details(postId));
+    }
 }

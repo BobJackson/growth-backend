@@ -33,13 +33,24 @@ public class PostServiceImpl implements PostService {
 
     @Override
     public Boolean batchSave(BatchSavePostsDtoV1 dto) {
-        List<PostCategoryDtoV1> categories = postCategoryService.listAll();
-        Finder<PostCategoryDtoV1, String> finder = new Finder<>(categories, PostCategoryDtoV1::getName);
+        Finder<PostCategoryDtoV1, String> finder = buildPostCategoryFinder();
         List<Post> posts = dto.getPosts()
                 .stream()
                 .map(it -> it.toEntity(finder.findEntityBy(it.getCategory()).getId()))
                 .toList();
         repository.saveAll(posts);
         return true;
+    }
+
+    private Finder<PostCategoryDtoV1, String> buildPostCategoryFinder() {
+        List<PostCategoryDtoV1> categories = postCategoryService.listAll();
+        return new Finder<>(categories, PostCategoryDtoV1::getName);
+    }
+
+    @Override
+    public PostDtoV1 details(String postId) {
+        Post post = repository.findById(postId).orElseThrow();
+        PostCategoryDtoV1 category = postCategoryService.findById(post.getPostCategoryId());
+        return PostDtoV1.from(post, category.getName());
     }
 }

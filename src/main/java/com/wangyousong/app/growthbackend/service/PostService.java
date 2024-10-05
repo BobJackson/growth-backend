@@ -9,4 +9,6 @@ public interface PostService {
     List<PostDtoV1> listAll();
 
     Boolean batchSave(BatchSavePostsDtoV1 dto);
+
+    PostDtoV1 details(String postId);
 }

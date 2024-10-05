@@ -32,4 +32,10 @@ public class PostCategoryServiceImpl implements PostCategoryService {
         repository.save(category);
         return true;
     }
+
+    @Override
+    public PostCategoryDtoV1 findById(String postCategoryId) {
+        PostCategory category = repository.findById(postCategoryId).orElseThrow();
+        return new PostCategoryDtoV1(category);
+    }
 }

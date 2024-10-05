@@ -10,4 +10,6 @@ public interface PostCategoryService {
     List<PostCategoryDtoV1> listAll();
 
     Boolean createCategory(CreateCategoryDtoV1 dto);
+
+    PostCategoryDtoV1 findById(String postCategoryId);
 }
