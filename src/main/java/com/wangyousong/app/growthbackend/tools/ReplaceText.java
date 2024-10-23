@@ -44,18 +44,18 @@ public final class ReplaceText {
     public static void main(String[] args) {
         if (args.length != 4) {
             usage();
-        } else {
-            try (PDDocument document = PDDocument.load(new File(args[2]))) {
-                if (document.isEncrypted()) {
-                    System.err.println("Error: Encrypted documents are not supported for this example.");
-                    System.exit(1);
-                }
-
-                System.out.println(args[0] + " => " + args[1]);
-
-                doReplaceText(document, args[0], args[1]);
-                document.save(args[3]);
+            return;
+        }
+        try (PDDocument document = PDDocument.load(new File(args[2]))) {
+            if (document.isEncrypted()) {
+                System.err.println("Error: Encrypted documents are not supported for this example.");
+                System.exit(1);
             }
+
+            System.out.println(args[0] + " => " + args[1]);
+
+            doReplaceText(document, args[0], args[1]);
+            document.save(args[3]);
         }
     }
 
