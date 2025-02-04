@@ -22,6 +22,7 @@ import org.springframework.stereotype.Service;
 import javax.annotation.Resource;
 import java.util.Collection;
 import java.util.Collections;
+import java.util.Set;
 
 import static com.wangyousong.app.growthbackend.common.DefaultSort.DEFAULT_SORT;
 
@@ -43,27 +44,27 @@ public class BookServiceImpl implements BookService {
     @Override
     public String create(BookRequest dto) {
         Book book = dto.toEntity(idService.generateId());
-        book.setAuthors(buildAuthors(dto));
-        book.setCategory(buildCategory(dto));
-        book.setTags(buildTags(dto));
+        book.setAuthors(buildAuthors(dto.getAuthors()));
+        book.setCategory(buildCategory(dto.getCategory()));
+        book.setTags(buildTags(dto.getTags()));
 
         Book entity = repository.save(book);
         return entity.getId();
     }
 
-    private Collection<Author> buildAuthors(BookRequest dto) {
-        return authorService.createIfNotExist(dto.getAuthors());
+    private Collection<Author> buildAuthors(Set<String> authors) {
+        return authorService.createIfNotExist(authors);
     }
 
-    private Category buildCategory(BookRequest dto) {
-        return categoryService.createIfNotExist(dto.getCategory());
+    private Category buildCategory(String category) {
+        return categoryService.createIfNotExist(category);
     }
 
-    private Collection<Tag> buildTags(BookRequest dto) {
-        if (CollectionUtils.isEmpty(dto.getTags())) {
+    private Collection<Tag> buildTags(Set<String> tags) {
+        if (CollectionUtils.isEmpty(tags)) {
             return Collections.emptyList();
         }
-        return tagService.createIfNotExist(dto.getTags());
+        return tagService.createIfNotExist(tags);
     }
 
     @Override

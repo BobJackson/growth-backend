@@ -1,7 +1,6 @@
 package com.wangyousong.app.growthbackend.oss.service.impl;
 
 import com.wangyousong.app.growthbackend.oss.service.AliYunOssService;
-import com.wangyousong.app.growthbackend.service.SimpleBookService;
 import com.wangyousong.app.growthbackend.tools.PdfToImageUtil;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -30,8 +29,6 @@ class AliYunOssServiceImplTest {
     public static final String PREFIX = "https://growth-public.oss-cn-shanghai.aliyuncs.com/";
     @Autowired
     private AliYunOssService aliYunOssService;
-    @Autowired
-    private SimpleBookService simpleBookService;
 
     @Test
     void listAllFiles() {
