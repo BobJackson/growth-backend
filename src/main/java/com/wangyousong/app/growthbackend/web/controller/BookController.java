@@ -14,7 +14,6 @@ import javax.annotation.Resource;
 
 @Api(tags = "books api")
 @RestController
-@CrossOrigin
 @RequestMapping("/books")
 public class BookController {
 
