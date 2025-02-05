@@ -18,4 +18,6 @@ public class Book extends BaseDomain {
     private Collection<Author> authors;
     private Category category;
     private Collection<Tag> tags;
+    private String press;
+    private boolean hidden;
 }

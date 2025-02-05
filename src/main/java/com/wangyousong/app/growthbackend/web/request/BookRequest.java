@@ -24,6 +24,9 @@ public class BookRequest {
     @NotBlank
     private String category;
     private Set<String> tags = new LinkedHashSet<>();
+    @NotBlank
+    private String press;
+    private boolean hidden;
 
     public Book toEntity(String id) {
         Book book = new Book();
@@ -33,6 +36,8 @@ public class BookRequest {
         book.setCover(cover);
         book.setPublishedAt(publishedAt);
         book.setDescription(StringUtils.trim(description));
+        book.setPress(StringUtils.trim(press));
+        book.setHidden(hidden);
         return book;
     }
 }
