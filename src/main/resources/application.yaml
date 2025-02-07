@@ -10,6 +10,11 @@ server:
     context-path: /api
 
 aliyun:
+  sts:
+    region: cn-shanghai
+    accessKeyId: your-key
+    accessKeySecret: your-secret
+    roleArn: your-arn
   oss:
     endpoint: oss-cn-shanghai.aliyuncs.com
     accessKeyId: your-key
