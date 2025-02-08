@@ -40,4 +40,10 @@ public class BookController {
         return R.success(bookService.deleteBy(id));
     }
 
+    @PatchMapping("/{id}/hidden")
+    @ApiOperation("toggle hidden a book by id")
+    public R<Boolean> toggleHidden(@PathVariable String id, @RequestParam boolean hidden) {
+        return R.success(bookService.toggleHidden(id, hidden));
+    }
+
 }

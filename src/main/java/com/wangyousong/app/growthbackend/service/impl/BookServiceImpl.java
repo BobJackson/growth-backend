@@ -85,4 +85,13 @@ public class BookServiceImpl implements BookService {
         repository.deleteById(id);
         return true;
     }
+
+    @Override
+    public Boolean toggleHidden(String id, boolean hidden) {
+        repository.findById(id).ifPresent(book -> {
+            book.setHidden(hidden);
+            repository.save(book);
+        });
+        return true;
+    }
 }

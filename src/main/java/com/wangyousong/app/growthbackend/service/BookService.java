@@ -13,4 +13,6 @@ public interface BookService {
     void clearBookListCache();
 
     Boolean deleteBy(String id);
+
+    Boolean toggleHidden(String id, boolean hidden);
 }
