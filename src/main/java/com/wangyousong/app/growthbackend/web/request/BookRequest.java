@@ -5,26 +5,36 @@ import lombok.Data;
 import org.apache.commons.lang3.StringUtils;
 
 import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotEmpty;
 import java.util.LinkedHashSet;
 import java.util.Set;
 
 @Data
 public class BookRequest {
-    @NotBlank
+    @NotBlank(message = "title can't be empty!")
     private String title;
+
     private String subTitle;
+
     private String publishedAt;
-    @NotBlank
+
+    @NotBlank(message = "cover can't be empty!")
     private String cover;
-    @NotBlank
+
+    @NotBlank(message = "description can't be empty!")
     private String description;
-    @NotBlank
+
+    @NotEmpty(message = "authors can't be empty!")
     private Set<String> authors;
-    @NotBlank
+
+    @NotBlank(message = "category can't be empty!")
     private String category;
+
     private Set<String> tags = new LinkedHashSet<>();
-    @NotBlank
+
+    @NotBlank(message = "press can't be empty!")
     private String press;
+
     private boolean hidden;
 
     public Book toEntity(String id) {
