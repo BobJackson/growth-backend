@@ -21,6 +21,7 @@ public class BookResponse {
     private String category;
     private List<String> authors;
     private List<String> tags;
+    private String press;
 
 
     public BookResponse(Book book) {
@@ -34,5 +35,6 @@ public class BookResponse {
         this.authors = book.getAuthors().stream().map(Author::getName).toList();
         Collection<Tag> tagList = ObjectUtils.defaultIfNull(book.getTags(), Collections.emptyList());
         this.tags = tagList.stream().map(Tag::getName).toList();
+        this.press = book.getPress();
     }
 }

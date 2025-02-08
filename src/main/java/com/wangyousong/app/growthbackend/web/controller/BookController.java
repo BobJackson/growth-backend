@@ -29,7 +29,7 @@ public class BookController {
     @ApiOperation("list all books by page")
     @GetMapping
     public R<Page<BookResponse>> list(@RequestParam int page, int size) {
-        PageRequest pageRequest = PageRequest.of(page, size);
+        PageRequest pageRequest = PageRequest.of(page - 1, size);
         Page<BookResponse> data = bookService.list(pageRequest);
         return R.success(data);
     }
