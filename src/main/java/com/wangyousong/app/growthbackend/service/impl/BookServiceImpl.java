@@ -79,4 +79,10 @@ public class BookServiceImpl implements BookService {
     public void clearBookListCache() {
         log.info("will clear book list cache");
     }
+
+    @Override
+    public Boolean deleteBy(String id) {
+        repository.deleteById(id);
+        return true;
+    }
 }

@@ -20,18 +20,24 @@ public class BookController {
     @Resource
     private BookService bookService;
 
-    @ApiOperation("create a book")
     @PostMapping
+    @ApiOperation("create a book")
     public R<String> create(@RequestBody BookRequest dto) {
         return R.success(bookService.create(dto));
     }
 
-    @ApiOperation("list all books by page")
     @GetMapping
+    @ApiOperation("list all books by page")
     public R<Page<BookResponse>> list(@RequestParam int page, int size) {
         PageRequest pageRequest = PageRequest.of(page - 1, size);
         Page<BookResponse> data = bookService.list(pageRequest);
         return R.success(data);
+    }
+
+    @DeleteMapping("/{id}")
+    @ApiOperation("delete a book by id")
+    public R<Boolean> delete(@PathVariable String id) {
+        return R.success(bookService.deleteBy(id));
     }
 
 }

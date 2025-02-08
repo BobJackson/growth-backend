@@ -11,4 +11,6 @@ public interface BookService {
     Page<BookResponse> list(PageRequest pageRequest);
 
     void clearBookListCache();
+
+    Boolean deleteBy(String id);
 }
