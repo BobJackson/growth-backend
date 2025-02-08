@@ -22,6 +22,7 @@ public class BookResponse {
     private List<String> authors;
     private List<String> tags;
     private String press;
+    private boolean hidden;
 
 
     public BookResponse(Book book) {
@@ -36,5 +37,6 @@ public class BookResponse {
         Collection<Tag> tagList = ObjectUtils.defaultIfNull(book.getTags(), Collections.emptyList());
         this.tags = tagList.stream().map(Tag::getName).toList();
         this.press = book.getPress();
+        this.hidden = book.isHidden();
     }
 }
