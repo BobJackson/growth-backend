@@ -11,6 +11,7 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
+import javax.validation.Valid;
 
 @Api(tags = "books api")
 @RestController
@@ -22,8 +23,14 @@ public class BookController {
 
     @PostMapping
     @ApiOperation("create a book")
-    public R<String> create(@RequestBody BookRequest dto) {
+    public R<String> create(@Valid @RequestBody BookRequest dto) {
         return R.success(bookService.create(dto));
+    }
+
+    @PutMapping("/{id}")
+    @ApiOperation("update a book by id")
+    public R<Boolean> update(@PathVariable String id, @Valid @RequestBody BookRequest dto) {
+        return R.success(bookService.update(id, dto));
     }
 
     @GetMapping

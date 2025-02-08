@@ -43,13 +43,25 @@ public class BookServiceImpl implements BookService {
 
     @Override
     public String create(BookRequest dto) {
-        Book book = dto.toEntity(idService.generateId());
-        book.setAuthors(buildAuthors(dto.getAuthors()));
-        book.setCategory(buildCategory(dto.getCategory()));
-        book.setTags(buildTags(dto.getTags()));
+        Book book = createFrom(dto, idService.generateId());
 
         Book entity = repository.save(book);
         return entity.getId();
+    }
+
+    private Book createFrom(BookRequest dto, String id) {
+        Book book = dto.toEntity(id);
+        book.setAuthors(buildAuthors(dto.getAuthors()));
+        book.setCategory(buildCategory(dto.getCategory()));
+        book.setTags(buildTags(dto.getTags()));
+        return book;
+    }
+
+    @Override
+    public Boolean update(String id, BookRequest dto) {
+        Book book = createFrom(dto, id);
+        repository.save(book);
+        return true;
     }
 
     private Collection<Author> buildAuthors(Set<String> authors) {

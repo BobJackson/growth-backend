@@ -10,7 +10,6 @@ import java.util.Set;
 
 @Data
 public class BookRequest {
-    private String id;
     @NotBlank
     private String title;
     private String subTitle;

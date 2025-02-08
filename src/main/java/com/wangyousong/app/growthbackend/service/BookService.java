@@ -15,4 +15,6 @@ public interface BookService {
     Boolean deleteBy(String id);
 
     Boolean toggleHidden(String id, boolean hidden);
+
+    Boolean update(String id, BookRequest dto);
 }
