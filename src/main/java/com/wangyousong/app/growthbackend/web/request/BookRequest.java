@@ -32,8 +32,8 @@ public class BookRequest {
 
     private Set<String> tags = new LinkedHashSet<>();
 
-    @NotBlank(message = "press can't be empty!")
-    private String press;
+    @NotBlank(message = "publisher can't be empty!")
+    private String publisher;
 
     private boolean hidden;
 
@@ -45,7 +45,7 @@ public class BookRequest {
         book.setCover(cover);
         book.setPublishedAt(publishedAt);
         book.setDescription(StringUtils.trim(description));
-        book.setPress(StringUtils.trim(press));
+        book.setPublisher(StringUtils.trim(publisher));
         book.setHidden(hidden);
         return book;
     }

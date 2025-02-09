@@ -36,7 +36,7 @@ public class BookResponse {
         this.authors = book.getAuthors().stream().map(Author::getName).toList();
         Collection<Tag> tagList = ObjectUtils.defaultIfNull(book.getTags(), Collections.emptyList());
         this.tags = tagList.stream().map(Tag::getName).toList();
-        this.press = book.getPress();
+        this.press = book.getPublisher();
         this.hidden = book.isHidden();
     }
 }
