@@ -26,6 +26,7 @@ public class UserServiceImpl implements UserService {
     @Override
     public LoginResponse login(LoginRequest request) {
         LoginResponse response = new LoginResponse();
+        response.setUsername(request.getUsername());
 
         Optional<User> optionalUser = userRepository.findByUsername(request.getUsername());
         if (optionalUser.isEmpty()) {
