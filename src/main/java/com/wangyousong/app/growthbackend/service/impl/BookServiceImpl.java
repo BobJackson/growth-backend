@@ -12,6 +12,7 @@ import com.wangyousong.app.growthbackend.service.CategoryService;
 import com.wangyousong.app.growthbackend.service.TagService;
 import com.wangyousong.app.growthbackend.web.request.BookRequest;
 import com.wangyousong.app.growthbackend.web.response.BookResponse;
+import com.wangyousong.app.growthbackend.web.response.BookStatisticResponse;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.collections4.CollectionUtils;
 import org.springframework.cache.annotation.CacheEvict;
@@ -105,5 +106,13 @@ public class BookServiceImpl implements BookService {
             repository.save(book);
         });
         return true;
+    }
+
+    @Override
+    public BookStatisticResponse statistic() {
+        BookStatisticResponse response = new BookStatisticResponse();
+        response.setTotal(repository.count());
+        response.setHidden(repository.countByHidden(true));
+        return response;
     }
 }
