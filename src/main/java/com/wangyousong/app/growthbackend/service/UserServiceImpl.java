@@ -12,6 +12,8 @@ import org.springframework.stereotype.Service;
 import javax.annotation.Resource;
 import java.util.Optional;
 
+import static cn.hutool.crypto.SecureUtil.md5;
+
 @Service
 @Slf4j
 public class UserServiceImpl implements UserService {
@@ -41,5 +43,15 @@ public class UserServiceImpl implements UserService {
         redisTemplate.opsForValue().set(token, optional.get());
         response.setToken(token);
         return response;
+    }
+
+    @Override
+    public String create(String username, String password) {
+        User user = new User();
+        user.setUsername(username);
+        user.setPassword(md5(password));
+
+        User saved = userRepository.save(user);
+        return saved.getId();
     }
 }
