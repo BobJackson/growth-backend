@@ -25,3 +25,7 @@ book:
   cache:
     clear:
       token: 123
+
+user:
+  manage:
+    token: 123
