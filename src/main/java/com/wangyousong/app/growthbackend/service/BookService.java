@@ -20,4 +20,6 @@ public interface BookService {
     Boolean update(String id, BookRequest dto);
 
     BookStatisticResponse statistic();
+
+    Boolean removeBlackBorder(String id);
 }

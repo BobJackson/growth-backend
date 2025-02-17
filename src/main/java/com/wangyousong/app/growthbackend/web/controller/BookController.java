@@ -60,4 +60,10 @@ public class BookController {
         return R.success(bookService.statistic());
     }
 
+    @PatchMapping("/{id}/actions/remove-black-border")
+    @ApiOperation("remove black border")
+    public R<Boolean> removeBlackBorder(@PathVariable String id) {
+        return R.success(bookService.removeBlackBorder(id));
+    }
+
 }

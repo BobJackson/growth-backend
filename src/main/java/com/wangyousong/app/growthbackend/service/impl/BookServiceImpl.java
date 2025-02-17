@@ -115,4 +115,12 @@ public class BookServiceImpl implements BookService {
         response.setHidden(repository.countByHidden(true));
         return response;
     }
+
+    @Override
+    public Boolean removeBlackBorder(String id) {
+        Book book = repository.findById(id).orElseThrow();
+        String cover = book.getCover();
+        // TODO impl it
+        return true;
+    }
 }
