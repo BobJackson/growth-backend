@@ -49,6 +49,7 @@ public class BookController {
     }
 
     @GetMapping("/all")
+    @CrossOrigin
     @ApiOperation("list all books")
     public R<List<BookDtoV1>> listAll() {
         PageRequest pageRequest = PageRequest.of(0, 1000).withSort(Sort.by(ASC, "title"));
