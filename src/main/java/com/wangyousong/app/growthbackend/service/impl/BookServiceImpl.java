@@ -1,19 +1,23 @@
 package com.wangyousong.app.growthbackend.service.impl;
 
+import cn.hutool.core.io.IoUtil;
 import com.wangyousong.app.growthbackend.common.IdService;
 import com.wangyousong.app.growthbackend.domain.Author;
 import com.wangyousong.app.growthbackend.domain.Book;
 import com.wangyousong.app.growthbackend.domain.Category;
 import com.wangyousong.app.growthbackend.domain.Tag;
+import com.wangyousong.app.growthbackend.oss.service.AliYunOssService;
 import com.wangyousong.app.growthbackend.repository.mongo.BookRepository;
 import com.wangyousong.app.growthbackend.service.AuthorService;
 import com.wangyousong.app.growthbackend.service.BookService;
 import com.wangyousong.app.growthbackend.service.CategoryService;
 import com.wangyousong.app.growthbackend.service.TagService;
+import com.wangyousong.app.growthbackend.tools.ImageUtil;
 import com.wangyousong.app.growthbackend.web.controller.dto.BookDtoV1;
 import com.wangyousong.app.growthbackend.web.request.BookRequest;
 import com.wangyousong.app.growthbackend.web.response.BookResponse;
 import com.wangyousong.app.growthbackend.web.response.BookStatisticResponse;
+import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.collections4.CollectionUtils;
 import org.springframework.cache.annotation.CacheEvict;
@@ -22,12 +26,15 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.net.URL;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 import java.util.Set;
-
-import static com.wangyousong.app.growthbackend.common.DefaultSort.DEFAULT_SORT;
 
 @Slf4j
 @Service
@@ -43,6 +50,8 @@ public class BookServiceImpl implements BookService {
     private CategoryService categoryService;
     @Resource
     private TagService tagService;
+    @Resource
+    private AliYunOssService aliYunOssService;
 
     @Override
     public String create(BookRequest dto) {
@@ -118,11 +127,31 @@ public class BookServiceImpl implements BookService {
     }
 
     @Override
+    @SneakyThrows
     public Boolean removeBlackBorder(String id) {
         Book book = repository.findById(id).orElseThrow();
-        String cover = book.getCover();
-        // TODO impl it
+
+        InputStream is = new URL(book.getCover()).openStream();
+        OutputStream os = ImageUtil.removeBlackBorder(is);
+
+        InputStream newIs = convertToInputStream(os);
+        String newCover = aliYunOssService.uploadInputStream(id, newIs);
+        log.info("new cover: {}", newCover);
+
+        IoUtil.close(newIs);
+        IoUtil.close(os);
+        IoUtil.close(is);
+
+        book.setCover(newCover);
+        repository.save(book);
         return true;
+    }
+
+    private InputStream convertToInputStream(OutputStream os) {
+        if (os instanceof ByteArrayOutputStream baos) {
+            return new ByteArrayInputStream(baos.toByteArray());
+        }
+        throw new IllegalArgumentException("Unsupported OutputStream type");
     }
 
     @Override

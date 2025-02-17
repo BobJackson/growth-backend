@@ -4,8 +4,7 @@ import lombok.experimental.UtilityClass;
 
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
-import java.io.File;
-import java.io.IOException;
+import java.io.*;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
@@ -33,9 +32,15 @@ public class ImageUtil {
     }
 
     private static void removeBlackBorder(File imageFile, String outputFolder) throws IOException {
-        String path = imageFile.getPath();
-        BufferedImage image = ImageIO.read(new File(path));
+        BufferedImage image = ImageIO.read(new File(imageFile.getPath()));
 
+        BufferedImage croppedImage = doRemoveBlackBorder(image);
+
+        // Save the cropped image
+        ImageIO.write(croppedImage, "jpg", new File(outputFolder + File.separator + imageFile.getName()));
+    }
+
+    private static BufferedImage doRemoveBlackBorder(BufferedImage image) {
         int width = image.getWidth();
         int height = image.getHeight();
 
@@ -52,9 +57,15 @@ public class ImageUtil {
                 croppedImage.setRGB(x, y, image.getRGB(x + 1, y + 1)); // Offset by 1 pixel
             }
         }
+        return croppedImage;
+    }
 
-        // Save the cropped image
-        ImageIO.write(croppedImage, "jpg", new File(outputFolder + File.separator + imageFile.getName()));
+    public static OutputStream removeBlackBorder(InputStream is) throws IOException {
+        BufferedImage image = ImageIO.read(is);
+        BufferedImage croppedImage = doRemoveBlackBorder(image);
+        ByteArrayOutputStream baos = new ByteArrayOutputStream();
+        ImageIO.write(croppedImage, "jpg", baos);
+        return baos;
     }
 
 
