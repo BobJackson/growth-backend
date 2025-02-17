@@ -10,6 +10,7 @@ import com.wangyousong.app.growthbackend.service.AuthorService;
 import com.wangyousong.app.growthbackend.service.BookService;
 import com.wangyousong.app.growthbackend.service.CategoryService;
 import com.wangyousong.app.growthbackend.service.TagService;
+import com.wangyousong.app.growthbackend.web.controller.dto.BookDtoV1;
 import com.wangyousong.app.growthbackend.web.request.BookRequest;
 import com.wangyousong.app.growthbackend.web.response.BookResponse;
 import com.wangyousong.app.growthbackend.web.response.BookStatisticResponse;
@@ -23,6 +24,7 @@ import org.springframework.stereotype.Service;
 import javax.annotation.Resource;
 import java.util.Collection;
 import java.util.Collections;
+import java.util.List;
 import java.util.Set;
 
 import static com.wangyousong.app.growthbackend.common.DefaultSort.DEFAULT_SORT;
@@ -82,7 +84,6 @@ public class BookServiceImpl implements BookService {
 
     @Override
     public Page<BookResponse> list(PageRequest pageRequest) {
-        pageRequest.withSort(DEFAULT_SORT);
         Page<Book> books = repository.findAll(pageRequest);
         return books.map(BookResponse::new);
     }
@@ -114,5 +115,13 @@ public class BookServiceImpl implements BookService {
         response.setTotal(repository.count());
         response.setHidden(repository.countByHidden(true));
         return response;
+    }
+
+    @Override
+    public List<BookDtoV1> listAll(PageRequest pageRequest) {
+        List<Book> books = repository.findAllByHidden(false, pageRequest);
+        return books.stream()
+                .map(it -> new BookDtoV1(it.getId(), it.getCover()))
+                .toList();
     }
 }

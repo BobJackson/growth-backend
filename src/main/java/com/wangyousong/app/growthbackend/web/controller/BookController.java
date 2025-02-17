@@ -2,6 +2,7 @@ package com.wangyousong.app.growthbackend.web.controller;
 
 import com.wangyousong.app.growthbackend.common.R;
 import com.wangyousong.app.growthbackend.service.BookService;
+import com.wangyousong.app.growthbackend.web.controller.dto.BookDtoV1;
 import com.wangyousong.app.growthbackend.web.request.BookRequest;
 import com.wangyousong.app.growthbackend.web.response.BookResponse;
 import com.wangyousong.app.growthbackend.web.response.BookStatisticResponse;
@@ -9,10 +10,15 @@ import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Sort;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 import javax.validation.Valid;
+import java.util.List;
+
+import static com.wangyousong.app.growthbackend.common.DefaultSort.DEFAULT_SORT;
+import static org.springframework.data.domain.Sort.Direction.ASC;
 
 @Api(tags = "books api")
 @RestController
@@ -37,9 +43,17 @@ public class BookController {
     @GetMapping
     @ApiOperation("list all books by page")
     public R<Page<BookResponse>> list(@RequestParam int page, int size) {
-        PageRequest pageRequest = PageRequest.of(page - 1, size);
+        PageRequest pageRequest = PageRequest.of(page - 1, size).withSort(DEFAULT_SORT);
         Page<BookResponse> data = bookService.list(pageRequest);
         return R.success(data);
+    }
+
+    @GetMapping("/all")
+    @ApiOperation("list all books")
+    public R<List<BookDtoV1>> listAll() {
+        PageRequest pageRequest = PageRequest.of(0, 1000).withSort(Sort.by(ASC, "title"));
+        List<BookDtoV1> books = bookService.listAll(pageRequest);
+        return R.success(books);
     }
 
     @DeleteMapping("/{id}")
