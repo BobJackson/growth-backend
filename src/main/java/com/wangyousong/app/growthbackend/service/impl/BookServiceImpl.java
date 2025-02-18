@@ -24,7 +24,6 @@ import org.apache.commons.collections4.CollectionUtils;
 import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
-import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
@@ -130,7 +129,6 @@ public class BookServiceImpl implements BookService {
 
     @Override
     @SneakyThrows
-    @Async
     public void removeBlackBorder(String id) {
         Book book = repository.findById(id).orElseThrow();
 
