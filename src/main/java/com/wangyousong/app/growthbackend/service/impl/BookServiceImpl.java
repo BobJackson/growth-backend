@@ -1,17 +1,18 @@
 package com.wangyousong.app.growthbackend.service.impl;
 
 import cn.hutool.core.io.IoUtil;
+import com.aliyun.oss.OSS;
+import com.aliyun.oss.OSSClientBuilder;
+import com.aliyun.oss.model.PutObjectRequest;
+import com.aliyun.oss.model.PutObjectResult;
+import com.aliyuncs.sts.model.v20150401.AssumeRoleResponse;
 import com.wangyousong.app.growthbackend.common.IdService;
 import com.wangyousong.app.growthbackend.domain.Author;
 import com.wangyousong.app.growthbackend.domain.Book;
 import com.wangyousong.app.growthbackend.domain.Category;
 import com.wangyousong.app.growthbackend.domain.Tag;
-import com.wangyousong.app.growthbackend.oss.service.AliYunOssService;
 import com.wangyousong.app.growthbackend.repository.mongo.BookRepository;
-import com.wangyousong.app.growthbackend.service.AuthorService;
-import com.wangyousong.app.growthbackend.service.BookService;
-import com.wangyousong.app.growthbackend.service.CategoryService;
-import com.wangyousong.app.growthbackend.service.TagService;
+import com.wangyousong.app.growthbackend.service.*;
 import com.wangyousong.app.growthbackend.tools.ImageUtil;
 import com.wangyousong.app.growthbackend.web.controller.dto.BookDtoV1;
 import com.wangyousong.app.growthbackend.web.request.BookRequest;
@@ -23,6 +24,7 @@ import org.apache.commons.collections4.CollectionUtils;
 import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
+import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
@@ -51,7 +53,7 @@ public class BookServiceImpl implements BookService {
     @Resource
     private TagService tagService;
     @Resource
-    private AliYunOssService aliYunOssService;
+    private StsTokenService stsTokenService;
 
     @Override
     public String create(BookRequest dto) {
@@ -128,23 +130,26 @@ public class BookServiceImpl implements BookService {
 
     @Override
     @SneakyThrows
-    public Boolean removeBlackBorder(String id) {
+    @Async
+    public void removeBlackBorder(String id) {
         Book book = repository.findById(id).orElseThrow();
 
         InputStream is = new URL(book.getCover()).openStream();
         OutputStream os = ImageUtil.removeBlackBorder(is);
-
         InputStream newIs = convertToInputStream(os);
-        String newCover = aliYunOssService.uploadInputStream(id, newIs);
-        log.info("new cover: {}", newCover);
+
+        AssumeRoleResponse.Credentials credentials = stsTokenService.getStsToken();
+        OSS ossClient = new OSSClientBuilder().build("https://oss-cn-shanghai.aliyuncs.com", credentials.getAccessKeyId(), credentials.getAccessKeySecret(), credentials.getSecurityToken());
+        PutObjectRequest putObjectRequest = new PutObjectRequest("growth-public", id + book.extractFileExtension(), newIs);
+        PutObjectResult result = ossClient.putObject(putObjectRequest);
+        log.info("upload result {}", result);
 
         IoUtil.close(newIs);
         IoUtil.close(os);
         IoUtil.close(is);
 
-        book.setCover(newCover);
+        book.setCover("https://growth-public.oss-cn-shanghai.aliyuncs.com/" + id + book.extractFileExtension());
         repository.save(book);
-        return true;
     }
 
     private InputStream convertToInputStream(OutputStream os) {

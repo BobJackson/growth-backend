@@ -81,19 +81,13 @@ class AliYunOssServiceImplTest {
         JSONObject personJsonObject = new JSONObject();
         try {
             personJsonObject.put("id", null);
-            personJsonObject.put("cover", extractUrl(key));
+            personJsonObject.put("cover", AliYunOssServiceImpl.extractUrl(key));
         } catch (JSONException e) {
             throw new RuntimeException(e);
         }
         HttpEntity<String> request =
                 new HttpEntity<>(personJsonObject.toString(), headers);
         restTemplate.postForEntity("https://books.wangyousong.com/api/v1/books", request, Object.class);
-    }
-
-    private static String extractUrl(String rawUrl) {
-        return rawUrl.substring(0, rawUrl.indexOf("?Expires="))
-                .replace("http:", "https:")
-                .replace("growth-public.oss-cn-shanghai.aliyuncs.com/", "growth-public.oss-cn-shanghai.aliyuncs.com/books/it/");
     }
 
     @Test

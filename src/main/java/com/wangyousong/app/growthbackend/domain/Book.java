@@ -20,4 +20,8 @@ public class Book extends BaseDomain {
     private Collection<Tag> tags;
     private String publisher;
     private boolean hidden;
+
+    public String extractFileExtension() {
+        return cover.substring(cover.lastIndexOf("."));
+    }
 }

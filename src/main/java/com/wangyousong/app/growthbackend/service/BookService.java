@@ -24,7 +24,7 @@ public interface BookService {
 
     BookStatisticResponse statistic();
 
-    Boolean removeBlackBorder(String id);
+    void removeBlackBorder(String id);
 
     List<BookDtoV1> listAll(PageRequest pageRequest);
 }

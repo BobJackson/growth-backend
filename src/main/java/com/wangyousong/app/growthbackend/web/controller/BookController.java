@@ -78,7 +78,8 @@ public class BookController {
     @PatchMapping("/{id}/actions/remove-black-border")
     @ApiOperation("remove black border")
     public R<Boolean> removeBlackBorder(@PathVariable String id) {
-        return R.success(bookService.removeBlackBorder(id));
+        bookService.removeBlackBorder(id);
+        return R.success(true);
     }
 
 }

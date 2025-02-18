@@ -45,6 +45,12 @@ public class AliYunOssServiceImpl implements AliYunOssService {
     @Value("${filePrefix:#{null}}")
     private String filePrefix;
 
+    public static String extractUrl(String rawUrl) {
+        return rawUrl.substring(0, rawUrl.indexOf("?Expires="))
+                .replace("http:", "https:")
+                .replace("growth-public.oss-cn-shanghai.aliyuncs.com/", "growth-public.oss-cn-shanghai.aliyuncs.com/books/it/");
+    }
+
     @Override
     public List<String> listAllFiles(String keyPrefix) {
         ObjectListing objects = oss.listObjects(config.getBucketName(), keyPrefix);
@@ -96,6 +102,7 @@ public class AliYunOssServiceImpl implements AliYunOssService {
         oss.putObject(config.getBucketName(), key, is);
         return generateUrl(key);
     }
+
 
     public List<String> uploadInputStreams(List<InputStream> inputStreams) {
         if (CollectionUtils.isEmpty(inputStreams)) {
