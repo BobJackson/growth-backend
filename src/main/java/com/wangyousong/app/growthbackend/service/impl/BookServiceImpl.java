@@ -14,7 +14,7 @@ import com.wangyousong.app.growthbackend.domain.Tag;
 import com.wangyousong.app.growthbackend.repository.mongo.BookRepository;
 import com.wangyousong.app.growthbackend.service.*;
 import com.wangyousong.app.growthbackend.tools.ImageUtil;
-import com.wangyousong.app.growthbackend.web.controller.dto.BookDtoV1;
+import com.wangyousong.app.growthbackend.web.controller.dto.BookDtoV2;
 import com.wangyousong.app.growthbackend.web.request.BookRequest;
 import com.wangyousong.app.growthbackend.web.response.BookResponse;
 import com.wangyousong.app.growthbackend.web.response.BookStatisticResponse;
@@ -158,10 +158,10 @@ public class BookServiceImpl implements BookService {
     }
 
     @Override
-    public List<BookDtoV1> listAll(PageRequest pageRequest) {
+    public List<BookDtoV2> listAll(PageRequest pageRequest) {
         List<Book> books = repository.findAllByHidden(false, pageRequest);
         return books.stream()
-                .map(it -> new BookDtoV1(it.getId(), it.getCover()))
+                .map(it -> new BookDtoV2(it.getId(), it.getCover(), it.getPublisher()))
                 .toList();
     }
 }

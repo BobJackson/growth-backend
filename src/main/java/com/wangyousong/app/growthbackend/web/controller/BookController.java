@@ -2,7 +2,7 @@ package com.wangyousong.app.growthbackend.web.controller;
 
 import com.wangyousong.app.growthbackend.common.R;
 import com.wangyousong.app.growthbackend.service.BookService;
-import com.wangyousong.app.growthbackend.web.controller.dto.BookDtoV1;
+import com.wangyousong.app.growthbackend.web.controller.dto.BookDtoV2;
 import com.wangyousong.app.growthbackend.web.request.BookRequest;
 import com.wangyousong.app.growthbackend.web.response.BookResponse;
 import com.wangyousong.app.growthbackend.web.response.BookStatisticResponse;
@@ -51,9 +51,9 @@ public class BookController {
     @GetMapping("/all")
     @CrossOrigin
     @ApiOperation("list all books")
-    public R<List<BookDtoV1>> listAll() {
+    public R<List<BookDtoV2>> listAll() {
         PageRequest pageRequest = PageRequest.of(0, 1000).withSort(Sort.by(ASC, "title"));
-        List<BookDtoV1> books = bookService.listAll(pageRequest);
+        List<BookDtoV2> books = bookService.listAll(pageRequest);
         return R.success(books);
     }
 

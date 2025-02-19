@@ -1,6 +1,6 @@
 package com.wangyousong.app.growthbackend.service;
 
-import com.wangyousong.app.growthbackend.web.controller.dto.BookDtoV1;
+import com.wangyousong.app.growthbackend.web.controller.dto.BookDtoV2;
 import com.wangyousong.app.growthbackend.web.request.BookRequest;
 import com.wangyousong.app.growthbackend.web.response.BookResponse;
 import com.wangyousong.app.growthbackend.web.response.BookStatisticResponse;
@@ -26,5 +26,5 @@ public interface BookService {
 
     void removeBlackBorder(String id);
 
-    List<BookDtoV1> listAll(PageRequest pageRequest);
+    List<BookDtoV2> listAll(PageRequest pageRequest);
 }
