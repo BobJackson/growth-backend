@@ -1,9 +1,11 @@
 package com.wangyousong.app.growthbackend.web.controller.dto;
 
 import com.wangyousong.app.growthbackend.domain.TransactionType;
-import java.time.LocalDateTime;
-import java.math.BigDecimal;
 import lombok.Data;
+
+import java.math.BigDecimal;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 /**
  * 财务记账条目响应 DTO
@@ -14,7 +16,7 @@ public class FinanceEntryResponse {
     private String id;
 
     // 日期
-    private LocalDateTime date;
+    private LocalDate date;
 
     // 事件名称
     private String eventName;

@@ -1,9 +1,10 @@
 package com.wangyousong.app.growthbackend.web.controller.dto;
 
 import com.wangyousong.app.growthbackend.domain.TransactionType;
-import java.time.LocalDateTime;
-import java.math.BigDecimal;
 import lombok.Data;
+
+import java.math.BigDecimal;
+import java.time.LocalDate;
 
 /**
  * 财务记账条目请求 DTO
@@ -11,7 +12,7 @@ import lombok.Data;
 @Data
 public class FinanceEntryRequest {
     // 日期
-    private LocalDateTime date;
+    private LocalDate date;
 
     // 事件名称
     private String eventName;

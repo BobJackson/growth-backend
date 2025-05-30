@@ -3,8 +3,10 @@ package com.wangyousong.app.growthbackend.domain;
 import lombok.Data;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
-import java.time.LocalDateTime;
+
 import java.math.BigDecimal;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 /**
  * 财务记账条目
@@ -16,7 +18,7 @@ public class FinanceEntry {
     private String id;
 
     // 日期
-    private LocalDateTime date;
+    private LocalDate date;
 
     // 事件名称
     private String eventName;
