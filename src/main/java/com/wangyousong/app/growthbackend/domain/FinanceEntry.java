@@ -24,8 +24,8 @@ public class FinanceEntry {
     // 金额
     private BigDecimal amount;
 
-    // 收入/支出
-    private Boolean isIncome;
+    // 交易类型（收入/支出）
+    private TransactionType transactionType;
 
     // 创建时间
     private LocalDateTime createdAt;

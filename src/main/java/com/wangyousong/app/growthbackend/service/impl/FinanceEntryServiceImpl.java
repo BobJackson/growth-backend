@@ -5,6 +5,7 @@ import com.wangyousong.app.growthbackend.repository.mongo.FinanceEntryRepository
 import com.wangyousong.app.growthbackend.service.FinanceEntryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
 import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Optional;
@@ -48,7 +49,7 @@ public class FinanceEntryServiceImpl implements FinanceEntryService {
         existingFinanceEntry.setDate(financeEntry.getDate());
         existingFinanceEntry.setEventName(financeEntry.getEventName());
         existingFinanceEntry.setAmount(financeEntry.getAmount());
-        existingFinanceEntry.setIsIncome(financeEntry.getIsIncome());
+        existingFinanceEntry.setTransactionType(financeEntry.getTransactionType());
         existingFinanceEntry.setUpdatedAt(LocalDateTime.now());
         return financeEntryRepository.save(existingFinanceEntry);
     }
