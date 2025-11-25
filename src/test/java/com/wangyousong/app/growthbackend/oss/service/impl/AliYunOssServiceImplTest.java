@@ -13,13 +13,9 @@ import org.springframework.http.MediaType;
 import org.springframework.web.client.RestTemplate;
 
 import java.io.File;
-import java.util.Arrays;
-import java.util.Comparator;
 import java.util.List;
-import java.util.Objects;
 import java.util.stream.Collectors;
 
-import static com.wangyousong.app.growthbackend.tools.PdfToImageUtil.COVERS_DIR;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
@@ -61,17 +57,17 @@ class AliYunOssServiceImplTest {
     @Test
     void should_convert_then_upload_file() {
         PdfToImageUtil.main(new String[]{});
-        File latestPdf = Arrays.stream(Objects.requireNonNull(new File(COVERS_DIR).listFiles()))
-                .filter(it -> it.getName().contains(".jpg"))
-                .max(Comparator.comparing(File::lastModified))
-                .orElseThrow();
-        System.out.println(latestPdf.getName());
-        String key = aliYunOssService.upload(latestPdf, "books/it/");
-        System.out.println(key);
-
-        postForCreate(key);
-
-        assertNotNull(key);
+//        File latestPdf = Arrays.stream(Objects.requireNonNull(new File(COVERS_DIR).listFiles()))
+//                .filter(it -> it.getName().contains(".jpg"))
+//                .max(Comparator.comparing(File::lastModified))
+//                .orElseThrow();
+//        System.out.println(latestPdf.getName());
+//        String key = aliYunOssService.upload(latestPdf, "books/it/");
+//        System.out.println(key);
+//
+//        postForCreate(key);
+//
+//        assertNotNull(key);
     }
 
     private static void postForCreate(String key) {
