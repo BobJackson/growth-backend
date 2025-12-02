@@ -1,10 +1,10 @@
 spring:
   data:
-    mongodb:
-      uri: mongodb://localhost:27017/growth
     redis:
       repositories:
         enabled: false
+  mongodb:
+    uri: mongodb://localhost:27017/growth
 server:
   servlet:
     context-path: /api
@@ -29,3 +29,9 @@ book:
 user:
   manage:
     token: 123
+
+springdoc:
+  swagger-ui:
+    enabled: true
+  api-docs:
+    enabled: true
