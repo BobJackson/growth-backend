@@ -3,13 +3,13 @@ package com.wangyousong.app.growthbackend.web.controller;
 import com.wangyousong.app.growthbackend.common.IdService;
 import com.wangyousong.app.growthbackend.common.R;
 import com.wangyousong.app.growthbackend.web.controller.dto.MovieDtoV1;
+import jakarta.annotation.Resource;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import javax.annotation.Resource;
 import java.util.List;
 
 @RestController

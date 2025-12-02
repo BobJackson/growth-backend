@@ -1,11 +1,11 @@
 package com.wangyousong.app.growthbackend.web.request;
 
 import com.wangyousong.app.growthbackend.domain.Book;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotEmpty;
 import lombok.Data;
 import org.apache.commons.lang3.StringUtils;
 
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotEmpty;
 import java.util.LinkedHashSet;
 import java.util.Set;
 

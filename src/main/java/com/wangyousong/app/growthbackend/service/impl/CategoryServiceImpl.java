@@ -7,10 +7,10 @@ import com.wangyousong.app.growthbackend.repository.mongo.CategoryRepository;
 import com.wangyousong.app.growthbackend.service.CategoryService;
 import com.wangyousong.app.growthbackend.web.request.CategoryRequest;
 import com.wangyousong.app.growthbackend.web.response.CategoryResponse;
+import jakarta.annotation.Resource;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
-import javax.annotation.Resource;
 import java.util.List;
 import java.util.Optional;
 

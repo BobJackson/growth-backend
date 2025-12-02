@@ -5,11 +5,11 @@ import com.wangyousong.app.growthbackend.domain.User;
 import com.wangyousong.app.growthbackend.repository.mongo.UserRepository;
 import com.wangyousong.app.growthbackend.web.request.LoginRequest;
 import com.wangyousong.app.growthbackend.web.response.LoginResponse;
+import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
 
-import javax.annotation.Resource;
 import java.util.Optional;
 
 import static cn.hutool.crypto.SecureUtil.md5;

@@ -4,9 +4,9 @@ import com.wangyousong.app.growthbackend.domain.SimpleBook;
 import com.wangyousong.app.growthbackend.repository.mongo.SimpleBookRepository;
 import com.wangyousong.app.growthbackend.service.SimpleBookService;
 import com.wangyousong.app.growthbackend.web.controller.dto.BookDtoV1;
+import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 
-import javax.annotation.Resource;
 import java.util.List;
 import java.util.Optional;
 

@@ -5,14 +5,14 @@ import com.wangyousong.app.growthbackend.common.R;
 import com.wangyousong.app.growthbackend.service.TagService;
 import com.wangyousong.app.growthbackend.web.request.TagRequest;
 import com.wangyousong.app.growthbackend.web.response.TagResponse;
-import io.swagger.annotations.Api;
+import io.swagger.v3.oas.annotations.tags.Tag;
+import jakarta.annotation.Resource;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
-import javax.annotation.Resource;
 import java.util.List;
 
-@Api(tags = "tags api")
+@Tag(name = "TagApi", description = "标签接口")
 @RestController
 @RequestMapping("/openapi/tags")
 public class TagApi {

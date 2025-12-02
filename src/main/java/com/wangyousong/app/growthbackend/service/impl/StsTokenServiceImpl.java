@@ -7,14 +7,12 @@ import com.aliyuncs.sts.model.v20150401.AssumeRoleResponse;
 import com.wangyousong.app.growthbackend.config.aliyun.AliyunStsConfig;
 import com.wangyousong.app.growthbackend.exception.StsTokenGenerateFailedException;
 import com.wangyousong.app.growthbackend.service.StsTokenService;
+import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.retry.annotation.Backoff;
-import org.springframework.retry.annotation.Retryable;
+import org.springframework.resilience.annotation.Retryable;
 import org.springframework.stereotype.Service;
 
-import javax.annotation.Resource;
 
-// Security Token Service(STS)
 @Service
 @Slf4j
 public class StsTokenServiceImpl implements StsTokenService {
@@ -27,9 +25,8 @@ public class StsTokenServiceImpl implements StsTokenService {
     @Override
     @Retryable(
             value = {java.net.UnknownHostException.class},
-            maxAttempts = 5,
-            backoff = @Backoff(delay = 500)
-    )
+            maxRetries = 5,
+            delay = 1500L)
     public AssumeRoleResponse.Credentials getStsToken() {
         AssumeRoleRequest request = new AssumeRoleRequest();
         request.setSysMethod(com.aliyuncs.http.MethodType.POST);

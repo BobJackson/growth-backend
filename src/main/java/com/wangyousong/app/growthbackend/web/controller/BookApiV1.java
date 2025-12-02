@@ -5,11 +5,11 @@ import com.wangyousong.app.growthbackend.service.BookService;
 import com.wangyousong.app.growthbackend.service.SimpleBookService;
 import com.wangyousong.app.growthbackend.web.controller.dto.BookDtoV1;
 import com.wangyousong.app.growthbackend.web.controller.dto.SimpleBookDtoList;
+import jakarta.annotation.Resource;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.web.bind.annotation.*;
 
-import javax.annotation.Resource;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Objects;

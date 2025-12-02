@@ -7,11 +7,11 @@ import com.wangyousong.app.growthbackend.repository.mongo.AuthorRepository;
 import com.wangyousong.app.growthbackend.service.AuthorService;
 import com.wangyousong.app.growthbackend.web.request.AuthorRequest;
 import com.wangyousong.app.growthbackend.web.response.AuthorResponse;
+import jakarta.annotation.Resource;
 import org.apache.commons.collections4.CollectionUtils;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
-import javax.annotation.Resource;
 import java.util.Collection;
 import java.util.List;
 import java.util.Optional;

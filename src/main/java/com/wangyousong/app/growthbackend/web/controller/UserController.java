@@ -3,10 +3,10 @@ package com.wangyousong.app.growthbackend.web.controller;
 import com.wangyousong.app.growthbackend.common.R;
 import com.wangyousong.app.growthbackend.service.UserService;
 import com.wangyousong.app.growthbackend.web.request.CreateUserRequest;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
 
-import javax.validation.Valid;
 import java.util.Objects;
 
 @RestController

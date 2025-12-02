@@ -8,11 +8,11 @@ import com.wangyousong.app.growthbackend.repository.mongo.TagRepository;
 import com.wangyousong.app.growthbackend.service.TagService;
 import com.wangyousong.app.growthbackend.web.request.TagRequest;
 import com.wangyousong.app.growthbackend.web.response.TagResponse;
+import jakarta.annotation.Resource;
 import org.apache.commons.collections4.CollectionUtils;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
-import javax.annotation.Resource;
 import java.util.Collection;
 import java.util.List;
 import java.util.Set;
