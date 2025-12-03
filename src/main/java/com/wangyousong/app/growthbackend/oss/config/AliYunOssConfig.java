@@ -6,7 +6,6 @@ import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ImportRuntimeHints;
-import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Component;
 
 /**
@@ -26,8 +25,9 @@ public class AliYunOssConfig {
     private String mappingDomain;
 
     @Bean
-    @Lazy
     public OSS oss() {
+        System.setProperty("user.language", "en");
+        System.setProperty("user.country", "US");
         return new OSSClientBuilder().build(this.getEndpoint(), this.getAccessKeyId(), this.getAccessKeySecret());
     }
 }
