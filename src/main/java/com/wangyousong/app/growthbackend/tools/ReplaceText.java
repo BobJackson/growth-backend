@@ -2,6 +2,7 @@ package com.wangyousong.app.growthbackend.tools;
 
 import lombok.SneakyThrows;
 import org.apache.commons.lang3.StringUtils;
+import org.apache.pdfbox.Loader;
 import org.apache.pdfbox.contentstream.operator.Operator;
 import org.apache.pdfbox.cos.COSArray;
 import org.apache.pdfbox.cos.COSName;
@@ -46,7 +47,7 @@ public final class ReplaceText {
             usage();
             return;
         }
-        try (PDDocument document = PDDocument.load(new File(args[2]))) {
+        try (PDDocument document = Loader.loadPDF(new File(args[2]))) {
             if (document.isEncrypted()) {
                 System.err.println("Error: Encrypted documents are not supported for this example.");
                 System.exit(1);
@@ -67,8 +68,7 @@ public final class ReplaceText {
 
         for (PDPage page : document.getPages()) {
             PDFStreamParser parser = new PDFStreamParser(page);
-            parser.parse();
-            List<Object> tokens = parser.getTokens();
+            List<Object> tokens = parser.parse();
 
             for (int j = 0; j < tokens.size(); j++) {
                 Object next = tokens.get(j);
