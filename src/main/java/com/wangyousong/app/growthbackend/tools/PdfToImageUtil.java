@@ -4,6 +4,7 @@ import lombok.SneakyThrows;
 import lombok.extern.log4j.Log4j2;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.time.StopWatch;
+import org.apache.pdfbox.Loader;
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.rendering.PDFRenderer;
 
@@ -44,7 +45,7 @@ public class PdfToImageUtil {
         if (!pdf.getName().contains(".pdf")) return;
         File dest = new File(COVERS_DIR + cutBookName(pdf.getName()) + "." + IMG_TYPE);
         if (dest.exists()) return;
-        try (PDDocument document = PDDocument.load(pdf)) {
+        try (PDDocument document = Loader.loadPDF(pdf)) {
             PDFRenderer renderer = new PDFRenderer(document);
             for (int i = 0; i < 1; ++i) {
                 BufferedImage bufferedImage = renderer.renderImageWithDPI(i, DPI);
