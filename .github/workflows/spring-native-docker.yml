@@ -1,4 +1,4 @@
-name: Spring-Native Docker CI (Boot 4.0.0 + JDK 25)
+name: Springboot-Native Docker CI
 
 on:
   push:
