@@ -1,0 +1,73 @@
+name: Spring-Native Docker CI (Boot 4.0.0 + JDK 25)
+
+on:
+  push:
+    branches: [ "master" ]
+    tags: [ "v*.*.*" ]
+  pull_request:
+    branches: [ "master" ]
+
+env:
+  REGISTRY: docker.io
+  IMAGE_NAME: ${{ github.repository }}
+
+jobs:
+  build-native-and-docker:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      # 1. 使用支持 JDK 25 的 GraalVM (24.2+)
+      - name: Set up GraalVM for JDK 25
+        uses: graalvm/setup-graalvm@v1
+        with:
+          java-version: '25'
+          distribution: 'graalvm-community'  # 或 'graalvm-enterprise' 如需商业支持
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          native-image-job-reports: 'true'   # 生成构建报告便于调试
+
+      # 2. 验证工具链版本
+      - name: Verify versions
+        run: |
+          java -version
+          native-image --version
+
+      # 3. 构建原生可执行文件 (Spring Boot 4.0 默认启用模块化构建)
+      - name: Build Spring-Boot native executable
+        run: ./gradlew bootBuildNative --no-daemon
+
+      # 4. 登录容器仓库
+      - name: Log in to docker hub
+        if: github.event_name != 'pull_request'
+        uses: docker/login-action@v3
+        with:
+          registry: ${{ env.REGISTRY }}
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      # 5. 元数据 (自动处理分支/pr/tag)
+      - name: Docker meta
+        id: meta
+        uses: docker/metadata-action@v5
+        with:
+          images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
+          tags: |
+            type=ref,event=branch
+            type=ref,event=pr
+            type=semver,pattern={{version}}
+            type=semver,pattern={{major}}.{{minor}}
+
+      # 6. 构建并推送多平台镜像 (可选)
+      - name: Build and push native image
+        uses: docker/build-push-action@v5
+        with:
+          context: .
+          file: ./Dockerfile.native
+          platforms: linux/amd64,linux/arm64,linux/amd64/v4  # 如需多平台，取消注释
+          push: ${{ github.event_name != 'pull_request' }}
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}

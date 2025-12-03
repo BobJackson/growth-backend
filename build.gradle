@@ -14,6 +14,12 @@ java {
     }
 }
 
+// Spring Boot 4.0 新增：显式声明模块化（可选，自动检测）
+bootJar {
+    // 生成的可执行文件名 (与 Dockerfile 中的 COPY 路径一致)
+    archiveFileName = 'app'
+}
+
 configurations {
     compileOnly {
         extendsFrom annotationProcessor
