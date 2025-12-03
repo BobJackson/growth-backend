@@ -1,0 +1,11 @@
+{
+  "bundles": [
+    {
+      "name": "oss",
+      "locales": [
+        "en_US",
+        "zh_CN"
+      ]
+    }
+  ]
+}
