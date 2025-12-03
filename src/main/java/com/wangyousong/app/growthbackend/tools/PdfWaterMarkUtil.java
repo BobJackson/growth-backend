@@ -1,5 +1,6 @@
 package com.wangyousong.app.growthbackend.tools;
 
+import org.apache.pdfbox.Loader;
 import org.apache.pdfbox.contentstream.operator.Operator;
 import org.apache.pdfbox.cos.COSName;
 import org.apache.pdfbox.cos.COSString;
@@ -15,8 +16,7 @@ import java.util.ArrayList;
 
 // can use this class to remove watermark in pdf file
 public class PdfWaterMarkUtil {
-    // Lasse Koskela - Test Driven_ Practical TDD and Acceptance TDD for Java Developers-Manning (2007).pdf
-    public static void main(String[] args) throws IOException {
+    static void main(String[] args) throws IOException {
         if (args.length < 3) {
             System.out.println("Arguments required: <input.pdf> <output.pdf> <watermark text> [auto-title]");
             return;
@@ -36,7 +36,7 @@ public class PdfWaterMarkUtil {
 
         System.out.println("Title: " + name);
 
-        PDDocument doc = PDDocument.load(new File(path));
+        PDDocument doc = Loader.loadPDF(new File(path));
         doc.setAllSecurityToBeRemoved(true);
         if (doc.isEncrypted()) {
             System.out.println("Document is encrypted");
@@ -65,9 +65,7 @@ public class PdfWaterMarkUtil {
         page.setAnnotations(new ArrayList<>());
 
         PDFStreamParser parser = new PDFStreamParser(page);
-        parser.parse();
-
-        ArrayList<Object> tokens = new ArrayList<>(parser.getTokens());
+        ArrayList<Object> tokens = new ArrayList<>(parser.parse());
         ArrayList<Integer> remove = new ArrayList<>();
         for (int i = 0; i < tokens.size(); i++) {
             Object token = tokens.get(i);
