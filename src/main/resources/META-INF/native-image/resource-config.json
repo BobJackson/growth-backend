@@ -1,11 +1,17 @@
 {
   "bundles": [
     {
-      "name": "oss",
-      "locales": [
-        "en_US",
-        "zh_CN"
-      ]
+      "name": "common"
     }
-  ]
+  ],
+  "resources": {
+    "includes": [
+      {
+        "pattern": ".*\\.properties$"
+      },
+      {
+        "pattern": "META-INF/services/.*"
+      }
+    ]
+  }
 }
