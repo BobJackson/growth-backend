@@ -9,7 +9,7 @@ on:
 
 env:
   REGISTRY: docker.io
-  IMAGE_NAME: ${{ github.repository }}
+  IMAGE_NAME: qq1187688895/growth-backend
 
 jobs:
   build-native-docker-image:
