@@ -7,18 +7,25 @@ public class AliYunOssRuntimeHints implements RuntimeHintsRegistrar {
 
     @Override
     public void registerHints(RuntimeHints hints, ClassLoader classLoader) {
-        // Register the resource bundle causing the crash
+        // 1. 之前修复 OSS 的配置 (保持不变)
         hints.resources().registerResourceBundle("oss");
-        hints.resources().registerResourceBundle("common");
-
-
-        // 2. 注册具体文件 Pattern (解决 WARN: versioninfo.properties not found)
-        // 有些 SDK 会尝试通过 ClassLoader.getResource() 直接拿文件，而不是通过 Bundle
+        hints.resources().registerResourceBundle("common"); // 有些版本可能需要这个
         hints.resources().registerPattern("oss.properties");
-        hints.resources().registerPattern("common.properties");
         hints.resources().registerPattern("versioninfo.properties");
 
-        // 3. 阿里云 SDK 内部经常用到 XML 解析 (JDOM/SAX)，预防性注册
+        // 2. 新增：修复 AcsClient (Core SDK) 的配置
+        // 解决 UserAgentConfig 报空指针的问题
+        hints.resources().registerPattern("project.properties");
+        hints.resources().registerPattern("**/project.properties"); // 关键：文件通常藏在深层包里
+
+        // 3. 预防性修复：注册 Region 和 Endpoint 配置
+        // AcsClient 启动后马上就会读这些文件，不加这个待会儿肯定还会崩
+        hints.resources().registerPattern("endpoints.json");
+        hints.resources().registerPattern("**/endpoints.json");
+        hints.resources().registerPattern("regions.txt");
+        hints.resources().registerPattern("**/regions.txt");
+
+        // 4. 通用预防
         hints.resources().registerPattern("*.xml");
     }
 }
