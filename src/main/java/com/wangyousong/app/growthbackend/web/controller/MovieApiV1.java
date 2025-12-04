@@ -19,7 +19,7 @@ public class MovieApiV1 {
     @Resource
     private IdService idService;
 
-    @Cacheable(cacheNames = "movieList")
+    @Cacheable(cacheNames = "movies")
     @CrossOrigin
     @GetMapping
     public R<List<MovieDtoV1>> list() {

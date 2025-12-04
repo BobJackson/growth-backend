@@ -1,14 +1,10 @@
 spring:
   data:
     redis:
-      repositories:
-        enabled: false
       host: 172.20.0.1
+
   mongodb:
     uri: mongodb://172.20.0.1:27017/growth
-server:
-  servlet:
-    context-path: /api
 springdoc:
   api-docs:
     enabled: false
