@@ -45,27 +45,5 @@ public class AliYunOssRuntimeHints implements RuntimeHintsRegistrar {
                 TypeReference.of("com.aliyuncs.http.clients.CompatibleUrlConnClient"),
                 MemberCategory.values()
         );
-
-        // ==========================================
-        // 6. 新增：修复 SpringDoc (Swagger) 启动报错
-        // ==========================================
-
-        // 报错的核心类：SpringWebProvider
-        // 必须注册为反射，允许 CGLIB 读取其字段和构造函数
-        hints.reflection().registerType(
-                TypeReference.of("org.springdoc.core.providers.SpringWebProvider"),
-                MemberCategory.values()
-        );
-
-        // 预防性补充：如果上面那个还不够，通常 SpringDoc 的这两个类也容易出问题
-        // 建议一并加上，避免你再跑一次编译流程
-        try {
-            hints.reflection().registerType(
-                    TypeReference.of("org.springdoc.webmvc.ui.SwaggerWelcome"),
-                    MemberCategory.values()
-            );
-        } catch (Exception e) {
-            // 忽略不存在的类（防止不同版本类名差异）
-        }
     }
 }
