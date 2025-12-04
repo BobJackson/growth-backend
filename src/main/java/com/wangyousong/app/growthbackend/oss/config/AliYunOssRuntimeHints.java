@@ -1,7 +1,9 @@
 package com.wangyousong.app.growthbackend.oss.config;
 
+import org.springframework.aot.hint.MemberCategory;
 import org.springframework.aot.hint.RuntimeHints;
 import org.springframework.aot.hint.RuntimeHintsRegistrar;
+import org.springframework.aot.hint.TypeReference;
 
 public class AliYunOssRuntimeHints implements RuntimeHintsRegistrar {
 
@@ -27,5 +29,21 @@ public class AliYunOssRuntimeHints implements RuntimeHintsRegistrar {
 
         // 4. 通用预防
         hints.resources().registerPattern("*.xml");
+
+        // ==========================================
+        // 5. 新增：反射配置 (解决 ClassNotFoundException)
+        // ==========================================
+
+        // 注册 ApacheHttpClient，允许调用其构造函数和方法
+        hints.reflection().registerType(
+                TypeReference.of("com.aliyuncs.http.clients.ApacheHttpClient"),
+                MemberCategory.values() // 开启所有权限（构造器、字段、方法），简单粗暴且有效
+        );
+
+        // 预防性注册：SDK 可能会降级尝试使用 JDK 原生 Client，建议一起加上以防万一
+        hints.reflection().registerType(
+                TypeReference.of("com.aliyuncs.http.clients.CompatibleUrlConnClient"),
+                MemberCategory.values()
+        );
     }
 }
