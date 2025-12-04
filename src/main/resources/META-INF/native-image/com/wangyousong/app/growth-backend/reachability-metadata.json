@@ -1,8 +1,14 @@
 {
-  "type": "org.springdoc.core.providers.SpringWebProvider$$SpringCGLIB$$0",
-  "fields": [
+  "reflection": [
     {
-      "name": "CGLIB$FACTORY_DATA"
+      "name": "org.springdoc.core.providers.SpringWebProvider$$SpringCGLIB$$0",
+      "fields": [
+        {
+          "name": "CGLIB$FACTORY_DATA",
+          "allowRead": true,
+          "allowWrite": true
+        }
+      ]
     }
   ]
 }
