@@ -22,7 +22,7 @@ public class BookResponse {
     private List<String> authors;
     private List<String> tags;
     private String publisher;
-    private boolean hidden;
+    private Boolean hidden;
 
 
     public BookResponse(Book book) {
@@ -34,9 +34,9 @@ public class BookResponse {
         this.description = book.getDescription();
         this.category = book.getCategory().getName();
         this.authors = book.getAuthors().stream().map(Author::getName).toList();
-        Collection<Tag> tagList = ObjectUtils.defaultIfNull(book.getTags(), Collections.emptyList());
+        Collection<Tag> tagList = ObjectUtils.getIfNull(book.getTags(), Collections.emptyList());
         this.tags = tagList.stream().map(Tag::getName).toList();
         this.publisher = book.getPublisher();
-        this.hidden = book.isHidden();
+        this.hidden = book.getHidden();
     }
 }

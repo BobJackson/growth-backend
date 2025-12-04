@@ -19,7 +19,7 @@ public class Book extends BaseDomain {
     private Category category;
     private Collection<Tag> tags;
     private String publisher;
-    private boolean hidden;
+    private Boolean hidden;
 
     public String extractFileExtension() {
         return cover.substring(cover.lastIndexOf("."));
