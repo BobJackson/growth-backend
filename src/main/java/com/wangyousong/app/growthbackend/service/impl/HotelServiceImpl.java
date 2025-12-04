@@ -4,7 +4,6 @@ import com.wangyousong.app.growthbackend.repository.mongo.HotelRepository;
 import com.wangyousong.app.growthbackend.service.HotelService;
 import com.wangyousong.app.growthbackend.web.controller.dto.HotelDtoV1;
 import lombok.RequiredArgsConstructor;
-import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -16,7 +15,6 @@ public class HotelServiceImpl implements HotelService {
     private final HotelRepository hotelRepository;
 
     @Override
-    @Cacheable(cacheNames = {"hotels"})
     public List<HotelDtoV1> list() {
         return hotelRepository.findAll()
                 .stream()

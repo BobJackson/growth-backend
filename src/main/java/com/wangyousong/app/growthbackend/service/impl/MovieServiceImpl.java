@@ -4,7 +4,6 @@ import com.wangyousong.app.growthbackend.common.IdService;
 import com.wangyousong.app.growthbackend.service.MovieService;
 import com.wangyousong.app.growthbackend.web.controller.dto.MovieDtoV1;
 import lombok.RequiredArgsConstructor;
-import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -16,7 +15,6 @@ public class MovieServiceImpl implements MovieService {
     private final IdService idService;
 
     @Override
-    @Cacheable(cacheNames = "movies")
     public List<MovieDtoV1> list() {
         return List.of(
                 new MovieDtoV1(idService.generateId(), "https://growth-public.oss-cn-shanghai.aliyuncs.com/movies/imdb/compressed/avatar.jpeg"),
