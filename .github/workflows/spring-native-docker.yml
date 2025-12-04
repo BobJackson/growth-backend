@@ -48,7 +48,7 @@ jobs:
           fi
 
           # 执行构建 (一键完成原生编译 + 镜像生成 + 推送)
-          ./gradlew bootBuildImage -Pspring.profiles.active=prod \
+          ./gradlew bootBuildImage \
             --no-daemon \
             --imageName="${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${TAG}" \
             --publishImage
