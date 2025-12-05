@@ -5,6 +5,13 @@ spring:
 
   mongodb:
     uri: mongodb://172.20.0.1:27017/growth
+
+# 添加 OpenTelemetry 配置
+otel:
+  exporter:
+    otlp:
+      endpoint: http://172.20.0.1:4318  # 明确指定端点
+
 springdoc:
   api-docs:
     enabled: false
