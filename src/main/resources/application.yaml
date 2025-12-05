@@ -12,6 +12,14 @@ server:
   servlet:
     context-path: /api
 
+logging:
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level [%X{traceId:-},%X{spanId:-}] %logger{36} - %msg%n"
+  level:
+    org.springframework.web.servlet.DispatcherServlet: DEBUG
+    org.springframework.web: DEBUG
+    org.apache.coyote.http11.Http11InputBuffer: TRACE
+
 # 添加 OpenTelemetry 配置
 otel:
   exporter:
