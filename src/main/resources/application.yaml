@@ -1,13 +1,30 @@
 spring:
+  application:
+    name: growth-backend
   data:
     redis:
       repositories:
         enabled: false
   mongodb:
     uri: mongodb://localhost:27017/growth
+
 server:
   servlet:
     context-path: /api
+
+# 添加 OpenTelemetry 配置
+otel:
+  exporter:
+    otlp:
+      endpoint: http://localhost:4318  # 明确指定端点
+  # 禁用日志和指标导出（Jaeger 只支持链路追踪）
+  logs:
+    exporter: none
+  metrics:
+    exporter: none
+  # 只启用链路追踪
+  traces:
+    exporter: otlp
 
 aliyun:
   sts:
