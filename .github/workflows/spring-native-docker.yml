@@ -10,6 +10,7 @@ on:
 env:
   REGISTRY: docker.io
   IMAGE_NAME: qq1187688895/growth-backend
+  DOCKER_DEFAULT_PLATFORM: linux/amd64
 
 jobs:
   build-native-docker-image:
