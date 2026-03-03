@@ -1,3 +1,4 @@
+
 {
   "reflection": [
     {
@@ -10,6 +11,33 @@
           "name": "CGLIB$CALLBACK_FILTER"
         }
       ]
+    },
+    {
+      "type": "com.aliyuncs.sts.model.v20150401.AssumeRoleResponse",
+      "allDeclaredConstructors": true,
+      "allPublicConstructors": true,
+      "allDeclaredFields": true,
+      "allPublicFields": true,
+      "allDeclaredMethods": true,
+      "allPublicMethods": true
+    },
+    {
+      "type": "com.aliyuncs.sts.model.v20150401.AssumeRoleResponse$Credentials",
+      "allDeclaredConstructors": true,
+      "allPublicConstructors": true,
+      "allDeclaredFields": true,
+      "allPublicFields": true,
+      "allDeclaredMethods": true,
+      "allPublicMethods": true
+    },
+    {
+      "type": "com.aliyuncs.sts.model.v20150401.AssumeRoleRequest",
+      "allDeclaredConstructors": true,
+      "allPublicConstructors": true,
+      "allDeclaredFields": true,
+      "allPublicFields": true,
+      "allDeclaredMethods": true,
+      "allPublicMethods": true
     }
   ]
 }
